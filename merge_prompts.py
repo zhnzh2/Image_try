@@ -1,9 +1,9 @@
-"""合并工具：扫描 lines/ 下所有子文件夹的 prompts.json，合并到 lines/prompts.json。
+"""校验 & 预览工具：扫描 lines/ 下所有线路文件夹，检查格式并展示各线路的完整 prompt。
 
 用法：
   python merge_prompts.py
 
-会自动跳过 _template 文件夹和无效文件。
+会自动跳过 _template 文件夹。
 """
 
 import json
@@ -11,59 +11,75 @@ from pathlib import Path
 
 
 LINES_DIR = Path("lines")
-OUTPUT_PATH = LINES_DIR / "prompts.json"
+CONFIG_PATH = LINES_DIR / "prompts.json"
 
 
-def merge() -> None:
-    if not LINES_DIR.is_dir():
-        raise FileNotFoundError(f"lines/ 目录不存在：{LINES_DIR.resolve()}")
+def main() -> None:
+    # 读取综述
+    if not CONFIG_PATH.is_file():
+        print(f"✗ 综述文件不存在：{CONFIG_PATH.resolve()}")
+        return
 
-    all_tasks: list[dict] = []
+    with CONFIG_PATH.open("r", encoding="utf-8") as f:
+        config = json.load(f)
 
+    common_prompt = config.get("common_prompt", "")
+    print(f"项目：{config.get('project', '（未命名）')}")
+    print(f"综述 prompt 长度：{len(common_prompt)} 字符")
+    print()
+
+    # 扫描子文件夹
+    found = 0
     for subdir in sorted(LINES_DIR.iterdir()):
-        # 只处理文件夹，跳过 _template
-        if not subdir.is_dir():
-            continue
-        if subdir.name.startswith("_"):
+        if not subdir.is_dir() or subdir.name.startswith("_"):
             continue
 
         prompt_file = subdir / "prompts.json"
         if not prompt_file.is_file():
-            print(f"⚠ 跳过：{subdir.name}/ 中没有 prompts.json")
+            print(f"⚠ {subdir.name}/ ：缺少 prompts.json")
             continue
 
         try:
             with prompt_file.open("r", encoding="utf-8") as f:
                 data = json.load(f)
         except json.JSONDecodeError as e:
-            print(f"✗ JSON 解析失败：{prompt_file} → {e}")
+            print(f"✗ {subdir.name}/ ：JSON 解析失败 → {e}")
             continue
 
-        # 支持单对象或数组
-        if isinstance(data, list):
-            tasks = data
-        elif isinstance(data, dict):
-            tasks = [data]
-        else:
-            print(f"✗ 格式错误（需为对象或数组）：{prompt_file}")
+        if not isinstance(data, dict):
+            print(f"✗ {subdir.name}/ ：不是 JSON 对象")
             continue
 
-        for task in tasks:
-            # 精简输出：只保留 generate_batch.py 需要的三个字段
-            cleaned = {
-                "id": task.get("id", subdir.name),
-                "name": task.get("name", subdir.name),
-                "prompt": task.get("prompt", ""),
-            }
-            all_tasks.append(cleaned)
+        line_id = data.get("id", "")
+        line_name = data.get("name", "")
+        line_specific = data.get("line_specific", "")
 
-        print(f"✓ {subdir.name}")
+        missing = []
+        if not line_id:
+            missing.append("id")
+        if not line_name:
+            missing.append("name")
+        if not line_specific.strip():
+            missing.append("line_specific")
 
-    with OUTPUT_PATH.open("w", encoding="utf-8") as f:
-        json.dump(all_tasks, f, ensure_ascii=False, indent=2)
+        if missing:
+            print(f"✗ {subdir.name}/ ：缺少字段 {missing}")
+            continue
 
-    print(f"\n合并完成，共 {len(all_tasks)} 条线路 → {OUTPUT_PATH.resolve()}")
+        full_prompt = common_prompt + "\n" + line_specific.strip()
+        found += 1
+
+        print(f"✓ [{line_id}] {line_name}")
+        print(f"  完整 prompt 长度：{len(full_prompt)} 字符")
+        print(f"  完整 prompt 预览：")
+        print(f"  {'-'*50}")
+        for line in full_prompt.split("\n"):
+            print(f"  {line}")
+        print(f"  {'-'*50}")
+        print()
+
+    print(f"共扫描到 {found} 条有效线路。")
 
 
 if __name__ == "__main__":
-    merge()
+    main()

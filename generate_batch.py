@@ -1,9 +1,10 @@
 """批量生成 JR 线路拟人角色图鉴。
 
-用法：
+工作流：
   1. 在 .env 文件中填入 OPENAI_API_KEY。
-  2. 在 prompts.json 中编辑线路任务清单。
-  3. 运行：python generate_batch.py
+  2. 编辑 lines/prompts.json —— 项目综述（画风、构图等通用设定）。
+  3. 在 lines/<线路名>/prompts.json 中编辑每条线路的角色特征。
+  4. 运行：python generate_batch.py
 """
 
 import base64
@@ -35,7 +36,8 @@ FINAL_SIZE = (1080, 1920)
 # 草稿 / 快速迭代用 "low"，最终成品改成 "high"。
 QUALITY = "low"
 
-PROMPTS_PATH = Path("lines/prompts.json")
+LINES_DIR = Path("lines")
+CONFIG_PATH = LINES_DIR / "prompts.json"
 OUTPUT_DIR = Path("output")
 RAW_DIR = OUTPUT_DIR / "raw"
 FINAL_DIR = OUTPUT_DIR / "final"
@@ -63,31 +65,75 @@ def load_client() -> OpenAI:
     )
 
 
-def load_tasks() -> list[dict[str, str]]:
-    """从 prompts.json 读取并校验任务清单。"""
-    if not PROMPTS_PATH.is_file():
-        raise FileNotFoundError(f"任务文件不存在：{PROMPTS_PATH.resolve()}")
+def load_project_config() -> dict:
+    """读取 lines/prompts.json 中的项目综述。"""
+    if not CONFIG_PATH.is_file():
+        raise FileNotFoundError(f"项目配置文件不存在：{CONFIG_PATH.resolve()}")
 
-    with PROMPTS_PATH.open("r", encoding="utf-8") as file:
-        tasks = json.load(file)
+    with CONFIG_PATH.open("r", encoding="utf-8") as file:
+        config = json.load(file)
 
-    if not isinstance(tasks, list):
-        raise ValueError("prompts.json 顶层必须是 JSON 数组。")
+    if not isinstance(config, dict):
+        raise ValueError("lines/prompts.json 顶层必须是 JSON 对象。")
 
-    required_keys = {"id", "name", "prompt"}
+    if "common_prompt" not in config:
+        raise ValueError("lines/prompts.json 中缺少 common_prompt 字段。")
 
-    for index, task in enumerate(tasks, start=1):
-        if not isinstance(task, dict):
-            raise ValueError(f"第 {index} 项必须是 JSON 对象。")
+    return config
 
-        missing_keys = required_keys - task.keys()
-        if missing_keys:
-            missing = ", ".join(sorted(missing_keys))
-            raise ValueError(f"第 {index} 项缺少字段：{missing}")
 
-        for key in required_keys:
-            if not isinstance(task[key], str) or not task[key].strip():
-                raise ValueError(f"第 {index} 项的 {key} 必须是非空字符串。")
+def load_tasks(common_prompt: str) -> list[dict[str, str]]:
+    """扫描 lines/ 下各子文件夹的 prompts.json，与综述拼接。"""
+    if not LINES_DIR.is_dir():
+        raise FileNotFoundError(f"lines/ 目录不存在：{LINES_DIR.resolve()}")
+
+    tasks: list[dict[str, str]] = []
+
+    for subdir in sorted(LINES_DIR.iterdir()):
+        # 只处理文件夹，跳过 _ 开头的（如 _template）和不是文件夹的
+        if not subdir.is_dir():
+            continue
+        if subdir.name.startswith("_"):
+            continue
+
+        prompt_file = subdir / "prompts.json"
+        if not prompt_file.is_file():
+            print(f"⚠ 跳过 {subdir.name}/：没有 prompts.json")
+            continue
+
+        try:
+            with prompt_file.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"✗ {subdir.name}/prompts.json JSON 解析失败：{e}")
+            continue
+
+        if not isinstance(data, dict):
+            print(f"✗ {subdir.name}/prompts.json 必须是 JSON 对象，跳过")
+            continue
+
+        task_id = data.get("id", subdir.name)
+        task_name = data.get("name", subdir.name)
+        line_specific = data.get("line_specific", "")
+
+        if not line_specific.strip():
+            print(f"✗ {subdir.name}/prompts.json 缺少 line_specific，跳过")
+            continue
+
+        # 综述 + 线路特征 → 完整 prompt
+        full_prompt = common_prompt + "\n" + line_specific.strip()
+
+        tasks.append({
+            "id": task_id,
+            "name": task_name,
+            "prompt": full_prompt,
+        })
+
+    if not tasks:
+        raise RuntimeError(
+            "没有找到任何有效线路。请在 lines/ 下为每条线路创建子文件夹，"
+            "并在其中放入 prompts.json（参考 lines/_template/prompts.json）。"
+        )
 
     return tasks
 
@@ -148,7 +194,9 @@ def generate_one(
 
 def main() -> None:
     client = load_client()
-    tasks = load_tasks()
+    config = load_project_config()
+    common_prompt = config["common_prompt"]
+    tasks = load_tasks(common_prompt)
 
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     FINAL_DIR.mkdir(parents=True, exist_ok=True)
@@ -158,7 +206,8 @@ def main() -> None:
     skipped = 0
     failed = 0
 
-    print(f"共读取到 {total} 个任务。")
+    print(f"项目：{config.get('project', '（未命名）')}")
+    print(f"共扫描到 {total} 条线路。")
     print(f"模型：{MODEL}")
     print(f"API 尺寸：{API_SIZE}")
     print(f"最终尺寸：{FINAL_SIZE[0]}x{FINAL_SIZE[1]}")
