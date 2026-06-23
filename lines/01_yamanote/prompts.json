@@ -2,5 +2,30 @@
   "id": "01_yamanote",
   "name": "山手线",
   "name_ja": "山手線",
-  "line_specific": "主题：JR东日本山手线拟人角色。角色为成年女性，沉稳、自信、可靠，具有东京核心环线的都市感。主色调：山手线黄绿色（#9ACD32）。背景：现代东京车站环境，站台与城市天际线交融。"
+  "line_specific": "主题：JR东日本山手线拟人角色。角色为成年女性，沉稳、自信、可靠，具有东京核心环线的都市感。主色调：山手线黄绿色（#9ACD32）。背景：现代东京车站环境，站台与城市天际线交融。",
+  "poster_vars": {
+    "line_name_zh": "山手线",
+    "line_name_en": "Yamanote Line",
+    "line_code": "JY",
+    "operator": "JR东日本",
+    "line_color": "黄绿色",
+    "line_color_hex": "#9ACD32",
+    "route_type": "东京都市环线",
+    "length": "34.5 km",
+    "stations": "30",
+    "loop_time": "约60分钟（环行一圈）",
+    "service_pattern": "循环运行，分内环（外回り）和外环（内回り）",
+    "rolling_stock": "E235系0番台",
+    "formation": "11辆编成",
+    "main_stations": "东京、有乐町、新桥、品川、大崎、五反田、目黑、惠比寿、涩谷、原宿、代代木、新宿、新大久保、高田马场、目白、池袋、大冢、巢鸭、驹込、田端、西日暮里、日暮里、莺谷、上野、御徒町、秋叶原、神田",
+    "related_lines": "JK 京滨东北线、JC 中央线快速、JB 中央总武缓行线、JA 埼京线、JU 上野东京线、JE 京叶线、JS 湘南新宿线",
+    "character_gender": "女性",
+    "character_personality": "自信、忙碌、信息量巨大、可靠、时尚、永远不停歇",
+    "character_role": "东京心脏的环形女王",
+    "character_age": "外表永远年轻的都市女王（源流1885年，环状运行1925年）",
+    "character_catchphrase": "东京不是一座城市，是一圈循环。",
+    "fun_facts": "日本最著名的铁路线之一 | 日均乘客超300万人次 | 环行一圈约1小时 | 连接东京所有核心商圈 | 山手线绿（黄绿）是东京城市象征色 | 每个车站都有独特的发车音乐 | 大崎站是环线运行的起点",
+    "opening_year": "1885年（品川线等区段开通）",
+    "key_milestone": "1925年（环状运行形成）"
+  }
 }

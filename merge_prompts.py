@@ -28,6 +28,8 @@ def main() -> None:
     print(f"综述 prompt 长度：{len(common_prompt)} 字符")
     print()
 
+    has_poster = config.get("poster", {}).get("prompt_template")
+
     # 扫描子文件夹
     found = 0
     for subdir in sorted(LINES_DIR.iterdir()):
@@ -53,6 +55,7 @@ def main() -> None:
         line_id = data.get("id", "")
         line_name = data.get("name", "")
         line_specific = data.get("line_specific", "")
+        poster_vars = data.get("poster_vars")
 
         missing = []
         if not line_id:
@@ -61,6 +64,8 @@ def main() -> None:
             missing.append("name")
         if not line_specific.strip():
             missing.append("line_specific")
+        if has_poster and not poster_vars:
+            missing.append("poster_vars（海报模式需要）")
 
         if missing:
             print(f"✗ {subdir.name}/ ：缺少字段 {missing}")
@@ -70,15 +75,20 @@ def main() -> None:
         found += 1
 
         print(f"✓ [{line_id}] {line_name}")
-        print(f"  完整 prompt 长度：{len(full_prompt)} 字符")
-        print(f"  完整 prompt 预览：")
-        print(f"  {'-'*50}")
-        for line in full_prompt.split("\n"):
-            print(f"  {line}")
-        print(f"  {'-'*50}")
+        print(f"  character_only prompt：{len(full_prompt)} 字符")
+
+        if has_poster and poster_vars:
+            poster_prompt = config["poster"]["prompt_template"]
+            for k, v in poster_vars.items():
+                poster_prompt = poster_prompt.replace("{{" + k + "}}", str(v))
+            print(f"  poster prompt：{len(poster_prompt)} 字符")
+            print(f"  poster_vars 字段：{list(poster_vars.keys())}")
+
         print()
 
     print(f"共扫描到 {found} 条有效线路。")
+    if has_poster:
+        print("海报模板已配置 ✓")
 
 
 if __name__ == "__main__":

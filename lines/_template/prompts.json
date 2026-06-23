@@ -2,5 +2,32 @@
   "id": "00_template",
   "name": "线路名（中文）",
   "name_ja": "路線名（日文）",
-  "line_specific": "主题：JR东日本____线拟人角色。角色设定：____。主色调：____（色码）。背景：____。"
+
+  "line_specific": "主题：JR东日本____线拟人角色。角色设定：____。主色调：____（色码）。背景：____。",
+
+  "poster_vars": {
+    "line_name_zh": "线路中文名",
+    "line_name_en": "Line Name English",
+    "line_code": "XX",
+    "operator": "JR东日本",
+    "line_color": "线路代表色（中文描述）",
+    "line_color_hex": "#XXXXXX",
+    "route_type": "环线 / 通勤干线 / 快速线 / 地方交通线 等",
+    "length": "XX km",
+    "stations": "XX",
+    "loop_time": "约XX分钟（非环线填不适用）",
+    "service_pattern": "运营特征描述",
+    "rolling_stock": "主力车型",
+    "formation": "编组信息",
+    "main_stations": "主要经由站，用顿号分隔",
+    "related_lines": "相关线路编号及名称",
+    "character_gender": "男性 / 女性",
+    "character_personality": "性格关键词",
+    "character_role": "角色定位（一句话）",
+    "character_age": "年龄设定（基于开通年份）",
+    "character_catchphrase": "口头禅",
+    "fun_facts": "趣事1 | 趣事2 | 趣事3 | 趣事4 | 趣事5",
+    "opening_year": "首段开通年份",
+    "key_milestone": "关键里程碑年份及事件"
+  }
 }

@@ -2,9 +2,14 @@
 
 工作流：
   1. 在 .env 文件中填入 OPENAI_API_KEY。
-  2. 编辑 lines/prompts.json —— 项目综述（画风、构图等通用设定）。
-  3. 在 lines/<线路名>/prompts.json 中编辑每条线路的角色特征。
-  4. 运行：python generate_batch.py
+  2. 编辑 lines/prompts.json —— 项目综述 + 海报模板（poster 模式）。
+  3. 在 lines/<线路名>/prompts.json 中编辑每条线路的角色特征和海报变量。
+  4. 切换模式：修改顶部 MODE = "character_only" 或 "poster"
+  5. 运行：python generate_batch.py
+
+模式说明：
+  character_only —— 仅生成角色立绘（无文字排版）
+  poster         —— 生成完整图鉴海报（含信息面板、路线图、小剧场等）
 """
 
 import base64
@@ -26,6 +31,9 @@ from PIL import Image
 
 
 # ====== 可调参数 ======
+
+# 生成模式：character_only（仅角色立绘） 或 poster（完整图鉴海报）
+MODE = "poster"
 
 MODEL = "gpt-image-2"
 
@@ -82,18 +90,33 @@ def load_project_config() -> dict:
     return config
 
 
-def load_tasks(common_prompt: str) -> list[dict[str, str]]:
-    """扫描 lines/ 下各子文件夹的 prompts.json，与综述拼接。"""
+def build_poster_prompt(poster_config: dict, poster_vars: dict) -> str:
+    """将海报模板中的 {{变量}} 替换为线路实际值。"""
+    template = poster_config["prompt_template"]
+    for key, value in poster_vars.items():
+        template = template.replace("{{" + key + "}}", str(value))
+    # 追加防翻车补充
+    anti_failure = poster_config.get("anti_failure", "")
+    if anti_failure:
+        template = template + "\n\n" + anti_failure
+    return template
+
+
+def load_tasks(config: dict, mode: str) -> list[dict[str, str]]:
+    """扫描 lines/ 下各子文件夹，根据 mode 构建不同 prompt。
+
+    mode = character_only: 综述 common_prompt + line_specific
+    mode = poster:         海报模板 + poster_vars 替换
+    """
     if not LINES_DIR.is_dir():
         raise FileNotFoundError(f"lines/ 目录不存在：{LINES_DIR.resolve()}")
 
     tasks: list[dict[str, str]] = []
+    common_prompt = config.get("common_prompt", "")
+    poster_config = config.get("poster", {})
 
     for subdir in sorted(LINES_DIR.iterdir()):
-        # 只处理文件夹，跳过 _ 开头的（如 _template）和不是文件夹的
-        if not subdir.is_dir():
-            continue
-        if subdir.name.startswith("_"):
+        if not subdir.is_dir() or subdir.name.startswith("_"):
             continue
 
         prompt_file = subdir / "prompts.json"
@@ -114,14 +137,25 @@ def load_tasks(common_prompt: str) -> list[dict[str, str]]:
 
         task_id = data.get("id", subdir.name)
         task_name = data.get("name", subdir.name)
-        line_specific = data.get("line_specific", "")
 
-        if not line_specific.strip():
-            print(f"✗ {subdir.name}/prompts.json 缺少 line_specific，跳过")
-            continue
-
-        # 综述 + 线路特征 → 完整 prompt
-        full_prompt = common_prompt + "\n" + line_specific.strip()
+        if mode == "poster":
+            poster_vars = data.get("poster_vars")
+            if not poster_vars or not isinstance(poster_vars, dict):
+                print(f"✗ {subdir.name}/ 缺少 poster_vars，跳过")
+                continue
+            if not poster_config or not poster_config.get("prompt_template"):
+                raise RuntimeError(
+                    "lines/prompts.json 中缺少 poster.prompt_template。"
+                    "请确认 poster 模式的模板已配置。"
+                )
+            full_prompt = build_poster_prompt(poster_config, poster_vars)
+        else:
+            # character_only（默认）
+            line_specific = data.get("line_specific", "")
+            if not line_specific.strip():
+                print(f"✗ {subdir.name}/ 缺少 line_specific，跳过")
+                continue
+            full_prompt = common_prompt + "\n" + line_specific.strip()
 
         tasks.append({
             "id": task_id,
@@ -195,8 +229,7 @@ def generate_one(
 def main() -> None:
     client = load_client()
     config = load_project_config()
-    common_prompt = config["common_prompt"]
-    tasks = load_tasks(common_prompt)
+    tasks = load_tasks(config, MODE)
 
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     FINAL_DIR.mkdir(parents=True, exist_ok=True)
@@ -207,6 +240,7 @@ def main() -> None:
     failed = 0
 
     print(f"项目：{config.get('project', '（未命名）')}")
+    print(f"模式：{MODE}")
     print(f"共扫描到 {total} 条线路。")
     print(f"模型：{MODEL}")
     print(f"API 尺寸：{API_SIZE}")
