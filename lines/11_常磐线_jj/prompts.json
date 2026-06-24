@@ -1,0 +1,39 @@
+{
+  "id": "11_常磐线_jj",
+  "name": "常磐线 JJ",
+  "name_ja": "",
+  "line_specific": "JR东日本常磐线 JJ。主色青绿（#00A86B）。源流1889 年。",
+  "poster_vars": {
+    "line_name_zh": "常磐线 JJ",
+    "line_name_en": "Joban Line",
+    "line_code": "JJ",
+    "operator": "JR东日本",
+    "line_color": "青绿",
+    "line_color_hex": "#00A86B",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "青绿, 交直流切换, 水户远旅, 松户柏通勤, 特急常陆, 坚韧的北东长姊",
+    "character_personality_tags": [
+      "青绿",
+      "交直流切换",
+      "水户远旅",
+      "松户柏通勤",
+      "特急常陆",
+      "坚韧的北东长姊"
+    ],
+    "character_role": "常磐 ときわ",
+    "character_age": "明治老牌东北方向的长姊，家族中坚。资历极深，仅次于元祖东海道线。",
+    "character_catchphrase": "别慌，夜色还长",
+    "fun_facts": "青绿 | 交直流切换 | 水户远旅 | 松户柏通勤 | 特急常陆 | 坚韧的北东长姊",
+    "opening_year": "1889 年",
+    "key_milestone": "1889 年"
+  }
+}

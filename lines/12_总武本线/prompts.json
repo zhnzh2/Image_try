@@ -1,0 +1,39 @@
+{
+  "id": "12_总武本线",
+  "name": "总武本线",
+  "name_ja": "总武快速线 JO",
+  "line_specific": "JR东日本总武本线。主色蓝（#0066CC）。源流1894 年。",
+  "poster_vars": {
+    "line_name_zh": "总武本线",
+    "line_name_en": "Sobu Main Line",
+    "line_code": "JO",
+    "operator": "JR东日本",
+    "line_color": "蓝",
+    "line_color_hex": "#0066CC",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "千叶疾行, 蓝白骑士, 地下贯通搭档, E235, 铫子与空港, 与横须贺线一心同体",
+    "character_personality_tags": [
+      "千叶疾行",
+      "蓝白骑士",
+      "地下贯通搭档",
+      "E235",
+      "铫子与空港",
+      "与横须贺线一心同体"
+    ],
+    "character_role": "総武 なぎさ",
+    "character_age": "千叶方向的老牌速度型姐姐，横须贺线的贯通搭档。明治年代的老资格，家族中的实干派。",
+    "character_catchphrase": "从东京地下来就像下副本",
+    "fun_facts": "千叶疾行 | 蓝白骑士 | 地下贯通搭档 | E235 | 铫子与空港 | 与横须贺线一心同体",
+    "opening_year": "1894 年",
+    "key_milestone": "1894 年"
+  }
+}

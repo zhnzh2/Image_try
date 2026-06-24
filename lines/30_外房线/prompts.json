@@ -1,0 +1,40 @@
+{
+  "id": "30_外房线",
+  "name": "外房线",
+  "name_ja": "外房線",
+  "line_specific": "JR东日本外房线。主色蔚蓝（#0066CC）。源流1896 年（房总铁道 苏我—大网开通）。",
+  "poster_vars": {
+    "line_name_zh": "外房线",
+    "line_name_en": "Sotobo Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "蔚蓝",
+    "line_color_hex": "#0066CC",
+    "route_type": "房总半岛东侧的主干动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "太平洋, 冲浪少女, 若潮, 九十九里, 鸭川, 房总蓝, 自由奔放",
+    "character_personality_tags": [
+      "太平洋",
+      "冲浪少女",
+      "若潮",
+      "九十九里",
+      "鸭川",
+      "房总蓝",
+      "自由奔放"
+    ],
+    "character_role": "外房 汀（そとぼう・みぎわ）",
+    "character_age": "房总半岛最年长的“海之元祖”，明治老牌姐姐，与外房线共享房总铁道源头的那一缕海风。",
+    "character_catchphrase": "那孩子太认真了，东京湾的潮汐都跟着她叹气",
+    "fun_facts": "太平洋 | 冲浪少女 | 若潮 | 九十九里 | 鸭川 | 房总蓝 | 自由奔放",
+    "opening_year": "1896 年（房总铁道 苏我—大网开通）",
+    "key_milestone": "1896 年（房总铁道 苏我—大网开通）"
+  }
+}

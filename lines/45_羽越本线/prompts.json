@@ -1,0 +1,42 @@
+{
+  "id": "45_羽越本线",
+  "name": "羽越本线",
+  "name_ja": "",
+  "line_specific": "JR东日本羽越本线。主色橙（#4B573D）。全长271.7公里。源流1922年（新津—村上间开通）。",
+  "poster_vars": {
+    "line_name_zh": "羽越本线",
+    "line_name_en": "Uetsu Main Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#4B573D",
+    "route_type": "新潟县与秋田县之间的日本海沿岸干线",
+    "length": "271.7公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "有E653系（特急稻穗）、キハ110系、E129系等",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "日本海, 夕阳, 酒田舞娘, 鸟海山, 笹川流れ, 特急稻穗, 强风停运, 东北地方干线, 东北地方干线角色设定",
+    "character_personality_tags": [
+      "日本海",
+      "夕阳",
+      "酒田舞娘",
+      "鸟海山",
+      "笹川流れ",
+      "特急稻穗",
+      "强风停运",
+      "东北地方干线",
+      "东北地方干线角色设定"
+    ],
+    "character_role": "羽越·日本海夕映之航海姬",
+    "character_age": "大正末期出生的日本海沿岸旅人，羽越的夕阳守护者",
+    "character_catchphrase": "大家都去看新干线了，只有我和日本海还在这里，像往常一样",
+    "fun_facts": "日本海 | 夕阳 | 酒田舞娘 | 鸟海山 | 笹川流れ | 特急稻穗 | 强风停运 | 东北地方干线 | 东北地方干线角色设定",
+    "opening_year": "1922年（新津—村上间开通）",
+    "key_milestone": "1922年（新津—村上间开通）"
+  }
+}

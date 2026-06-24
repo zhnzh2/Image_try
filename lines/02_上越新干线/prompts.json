@@ -1,0 +1,40 @@
+{
+  "id": "02_上越新干线",
+  "name": "上越新干线",
+  "name_ja": "上越新幹線",
+  "line_specific": "JR东日本上越新干线。主色深绿（#006400）。全长333.9公里。源流1982年（大宫—新潟段开业）。",
+  "poster_vars": {
+    "line_name_zh": "上越新干线",
+    "line_name_en": "Joetsu Shinkansen",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深绿",
+    "line_color_hex": "#006400",
+    "route_type": "日本降雪最猛烈的地区之一，上越新干线",
+    "length": "333.9公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E7系（12辆编成",
+    "formation": "12辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "雪国, 朱鹭, 深绿, 除雪, 越后汤泽, 温泉与清酒, 冷艳温柔",
+    "character_personality_tags": [
+      "雪国",
+      "朱鹭",
+      "深绿",
+      "除雪",
+      "越后汤泽",
+      "温泉与清酒",
+      "冷艳温柔"
+    ],
+    "character_role": "上越・朱鹭之雪姬",
+    "character_age": "与东北新干线同辈的雪国美人，新干线家族中的冷艳姐姐",
+    "character_catchphrase": "雪国之路，由我来守",
+    "fun_facts": "雪国 | 朱鹭 | 深绿 | 除雪 | 越后汤泽 | 温泉与清酒 | 冷艳温柔",
+    "opening_year": "1982年（大宫—新潟段开业）",
+    "key_milestone": "1982年（大宫—新潟段开业）"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "01_东北新干线",
+  "name": "东北新干线",
+  "name_ja": "東北新幹線",
+  "line_specific": "JR东日本东北新干线。主色深绿（#008000）。全长674.9公里。源流1982年（大宫—盛冈段开业）。",
+  "poster_vars": {
+    "line_name_zh": "东北新干线",
+    "line_name_en": "Tohoku Shinkansen",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深绿",
+    "line_color_hex": "#008000",
+    "route_type": "名副其实的“日本东北大动脉",
+    "length": "674.9公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E5系（10辆编成",
+    "formation": "10辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "320km/h, 并结, 东北大动脉, 深绿斗篷, Gran, Class, 沉默的长兄",
+    "character_personality_tags": [
+      "320km/h",
+      "并结",
+      "东北大动脉",
+      "深绿斗篷",
+      "Gran",
+      "Class",
+      "沉默的长兄"
+    ],
+    "character_role": "东北・隼之剑士",
+    "character_age": "昭和末期的中坚栋梁，新干线家族中的长子型存在",
+    "character_catchphrase": "风大雪大又如何，我的剑，从不迟刻",
+    "fun_facts": "320km/h | 并结 | 东北大动脉 | 深绿斗篷 | Gran | Class | 沉默的长兄",
+    "opening_year": "1982年（大宫—盛冈段开业）",
+    "key_milestone": "1982年（大宫—盛冈段开业）"
+  }
+}

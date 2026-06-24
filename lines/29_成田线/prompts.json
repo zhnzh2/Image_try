@@ -1,0 +1,40 @@
+{
+  "id": "29_成田线",
+  "name": "成田线",
+  "name_ja": "成田線 JO",
+  "line_specific": "JR东日本成田线。主色蓝（#0066CC）。全长94.6公里。源流1897年。",
+  "poster_vars": {
+    "line_name_zh": "成田线",
+    "line_name_en": "Narita Line",
+    "line_code": "JO",
+    "operator": "JR东日本",
+    "line_color": "蓝",
+    "line_color_hex": "#0066CC",
+    "route_type": "千叶县北部及成田国际机场进出东京的干线",
+    "length": "94.6公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "蓝白巫女服, 机场跑道暗纹, 成田山护身符, NEX指定席车票, 三语切换, 空港与寺庙的双面守护者, 首都圈房总方向",
+    "character_personality_tags": [
+      "蓝白巫女服",
+      "机场跑道暗纹",
+      "成田山护身符",
+      "NEX指定席车票",
+      "三语切换",
+      "空港与寺庙的双面守护者",
+      "首都圈房总方向"
+    ],
+    "character_role": "成田·空と寺の多面巫女",
+    "character_age": "明治30年代出生的老牌巫女，成田山与成田机场的双面守护者",
+    "character_catchphrase": "无论你是去参拜还是起飞，我都会把你准时送到",
+    "fun_facts": "蓝白巫女服 | 机场跑道暗纹 | 成田山护身符 | NEX指定席车票 | 三语切换 | 空港与寺庙的双面守护者 | 首都圈房总方向",
+    "opening_year": "1897年",
+    "key_milestone": "1897年"
+  }
+}

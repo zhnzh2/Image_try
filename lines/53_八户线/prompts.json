@@ -1,0 +1,40 @@
+{
+  "id": "53_八户线",
+  "name": "八户线",
+  "name_ja": "八戸線",
+  "line_specific": "JR东日本八户线。主色靛蓝（#003399）。全长64.9公里。源流1894年（凑—八户间开通）。",
+  "poster_vars": {
+    "line_name_zh": "八户线",
+    "line_name_en": "Hachinohe Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "靛蓝",
+    "line_color_hex": "#003399",
+    "route_type": "与东北新干线",
+    "length": "64.9公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ110系气动车（1-2辆编成）",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "海猫, 三陆海岸, 渔港, 气动车, 震灾复兴, 元祖级地方线, 鲛浦断崖",
+    "character_personality_tags": [
+      "海猫",
+      "三陆海岸",
+      "渔港",
+      "气动车",
+      "震灾复兴",
+      "元祖级地方线",
+      "鲛浦断崖"
+    ],
+    "character_role": "八户·海猫婆婆",
+    "character_age": "元祖级老牌姐姐，地方线中的遗老",
+    "character_catchphrase": "潮が満ちるまで待とう（等潮水涨起来再说）",
+    "fun_facts": "海猫 | 三陆海岸 | 渔港 | 气动车 | 震灾复兴 | 元祖级地方线 | 鲛浦断崖",
+    "opening_year": "1894年（凑—八户间开通）",
+    "key_milestone": "1894年（凑—八户间开通）"
+  }
+}

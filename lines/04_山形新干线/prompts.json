@@ -1,0 +1,39 @@
+{
+  "id": "04_山形新干线",
+  "name": "山形新干线",
+  "name_ja": "山形新幹線",
+  "line_specific": "JR东日本山形新干线。主色银绿（#4B573D）。全长148.6公里。源流1992年（福岛—山形段开业）。",
+  "poster_vars": {
+    "line_name_zh": "山形新干线",
+    "line_name_en": "Yamagata Shinkansen",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "银绿",
+    "line_color_hex": "#4B573D",
+    "route_type": "日本最早的“迷你新干线",
+    "length": "148.6公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E3系（7辆编成",
+    "formation": "7辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "迷你新干线, 树冰, 米泽牛, 在来线转身, 樱桃与温泉, 朴实活力",
+    "character_personality_tags": [
+      "迷你新干线",
+      "树冰",
+      "米泽牛",
+      "在来线转身",
+      "樱桃与温泉",
+      "朴实活力"
+    ],
+    "character_role": "山形・翼之田舍娘",
+    "character_age": "平成初期的“迷你新干线”长女，由在来线华丽转身的农家少女",
+    "character_catchphrase": "翼，要起飞了",
+    "fun_facts": "迷你新干线 | 树冰 | 米泽牛 | 在来线转身 | 樱桃与温泉 | 朴实活力",
+    "opening_year": "1992年（福岛—山形段开业）",
+    "key_milestone": "1992年（福岛—山形段开业）"
+  }
+}

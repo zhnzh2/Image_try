@@ -1,0 +1,40 @@
+{
+  "id": "62_气仙沼线_brt",
+  "name": "气仙沼线 BRT",
+  "name_ja": "気仙沼線 BRT",
+  "line_specific": "JR东日本气仙沼线 BRT。主色红（#CC0000）。源流2012 年。",
+  "poster_vars": {
+    "line_name_zh": "气仙沼线 BRT",
+    "line_name_en": "Kesennuma Line BRT",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "红",
+    "line_color_hex": "#CC0000",
+    "route_type": "东日本大地震后，在原气仙沼线铁路废墟上架设的专用道巴士系统",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "再生之乙女, BRT, 志津川, 南三陆复兴, 巴士方向盘, 海风与废墟, 不言弃的韧劲",
+    "character_personality_tags": [
+      "再生之乙女",
+      "BRT",
+      "志津川",
+      "南三陆复兴",
+      "巴士方向盘",
+      "海风与废墟",
+      "不言弃的韧劲"
+    ],
+    "character_role": "気仙沼 志津香",
+    "character_age": "平成·令和新世代，从铁轨废墟中诞生的再生少女",
+    "character_catchphrase": "今日も、ちゃんと着くからね",
+    "fun_facts": "再生之乙女 | BRT | 志津川 | 南三陆复兴 | 巴士方向盘 | 海风与废墟 | 不言弃的韧劲",
+    "opening_year": "2012 年",
+    "key_milestone": "2012 年"
+  }
+}

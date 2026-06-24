@@ -1,0 +1,41 @@
+{
+  "id": "41_伊东线",
+  "name": "伊东线",
+  "name_ja": "伊東線",
+  "line_specific": "JR东日本伊东线。主色蓝（#0066CC）。全长16.9 公里。源流1938 年（热海—伊东）。",
+  "poster_vars": {
+    "line_name_zh": "伊东线",
+    "line_name_en": "Ito Line",
+    "line_code": "JT",
+    "operator": "JR东日本",
+    "line_color": "蓝",
+    "line_color_hex": "#0066CC",
+    "route_type": null,
+    "length": "16.9 公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "相模滩, 踊り子, 温泉女将, 热海, 伊豆半岛入口, 海燕, 开朗看板娘, 上越·信越地方干线",
+    "character_personality_tags": [
+      "相模滩",
+      "踊り子",
+      "温泉女将",
+      "热海",
+      "伊豆半岛入口",
+      "海燕",
+      "开朗看板娘",
+      "上越·信越地方干线"
+    ],
+    "character_role": "伊東・相模灘の海燕",
+    "character_age": "昭和前期出生的海滨女将",
+    "character_catchphrase": "从热海到伊东，你看着海坐 20 分钟就到了——然后泡温泉吧",
+    "fun_facts": "相模滩 | 踊り子 | 温泉女将 | 热海 | 伊豆半岛入口 | 海燕 | 开朗看板娘 | 上越·信越地方干线",
+    "opening_year": "1938 年（热海—伊东）",
+    "key_milestone": "1938 年（热海—伊东）"
+  }
+}

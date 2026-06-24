@@ -1,0 +1,41 @@
+{
+  "id": "51_弥彦线",
+  "name": "弥彦线",
+  "name_ja": "弥彦線",
+  "line_specific": "JR东日本弥彦线。主色绿（#90EE90）。全长17.4公里。源流1952年。",
+  "poster_vars": {
+    "line_name_zh": "弥彦线",
+    "line_name_en": "Yahiko Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "绿",
+    "line_color_hex": "#90EE90",
+    "route_type": null,
+    "length": "17.4公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E127系或E129系",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "弥彦神社, 巫女, 交通安全御守, 越后平原, 吉田站, 短支线, E129, 地方交通线（东北·太平洋侧）",
+    "character_personality_tags": [
+      "弥彦神社",
+      "巫女",
+      "交通安全御守",
+      "越后平原",
+      "吉田站",
+      "短支线",
+      "E129",
+      "地方交通线（东北·太平洋侧）"
+    ],
+    "character_role": "弥彦 みのり",
+    "character_age": "战后昭和的地方守护者，弥彦神社的巫女铁道员",
+    "character_catchphrase": "今日も無事に、行ってらっしゃい",
+    "fun_facts": "弥彦神社 | 巫女 | 交通安全御守 | 越后平原 | 吉田站 | 短支线 | E129 | 地方交通线（东北·太平洋侧）",
+    "opening_year": "1952年",
+    "key_milestone": "1952年"
+  }
+}

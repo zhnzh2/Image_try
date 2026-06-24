@@ -1,0 +1,38 @@
+{
+  "id": "20_京叶线",
+  "name": "京叶线",
+  "name_ja": "京葉線 JE",
+  "line_specific": "JR东日本京叶线。主色红（#CC0000）。源流1975 年（苏我—新木场）。",
+  "poster_vars": {
+    "line_name_zh": "京叶线",
+    "line_name_en": "Keiyo Line",
+    "line_code": "JE",
+    "operator": "JR东日本",
+    "line_color": "红",
+    "line_color_hex": "#CC0000",
+    "route_type": "东京湾岸的大动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E233系5000番台",
+    "formation": "10辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "湾岸红, 迪士尼之门, 苏我通勤, 海洋系少女, 深海月台",
+    "character_personality_tags": [
+      "湾岸红",
+      "迪士尼之门",
+      "苏我通勤",
+      "海洋系少女",
+      "深海月台"
+    ],
+    "character_role": "京叶·湾岸梦之案内人",
+    "character_age": "昭和末·平成初的开朗海洋系少女",
+    "character_catchphrase": "下一站，梦与海",
+    "fun_facts": "湾岸红 | 迪士尼之门 | 苏我通勤 | 海洋系少女 | 深海月台",
+    "opening_year": "1975 年（苏我—新木场）",
+    "key_milestone": "1975 年（苏我—新木场）"
+  }
+}

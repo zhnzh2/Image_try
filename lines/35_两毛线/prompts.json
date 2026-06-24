@@ -1,0 +1,39 @@
+{
+  "id": "35_两毛线",
+  "name": "两毛线",
+  "name_ja": "両毛線",
+  "line_specific": "JR东日本两毛线。主色深蓝（#003399）。全长84 公里。源流1884 年（小山—前桥）。",
+  "poster_vars": {
+    "line_name_zh": "两毛线",
+    "line_name_en": "Ryomo Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深蓝",
+    "line_color_hex": "#003399",
+    "route_type": "连接小山、足利、桐生、伊势崎、前桥、新前桥的北关东横贯干线",
+    "length": "84 公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "足利織物, 渡良濑川, 古都底蕴, 織姫, 北关东横贯, 沉稳姐姐",
+    "character_personality_tags": [
+      "足利織物",
+      "渡良濑川",
+      "古都底蕴",
+      "織姫",
+      "北关东横贯",
+      "沉稳姐姐"
+    ],
+    "character_role": "両毛・織姫",
+    "character_age": "北关东元祖级古参姐姐",
+    "character_catchphrase": "一根丝很细，但织成千条就是纽带",
+    "fun_facts": "足利織物 | 渡良濑川 | 古都底蕴 | 織姫 | 北关东横贯 | 沉稳姐姐",
+    "opening_year": "1884 年（小山—前桥）",
+    "key_milestone": "1884 年（小山—前桥）"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "54_五能线",
+  "name": "五能线",
+  "name_ja": "五能線",
+  "line_specific": "JR东日本五能线。主色蓝（#0066CC）。源流1908年（能代—五所川原间开通）。",
+  "poster_vars": {
+    "line_name_zh": "五能线",
+    "line_name_en": "Gono Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "蓝",
+    "line_color_hex": "#0066CC",
+    "route_type": "日本海侧最著名的观光干线",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ40系、キハ48系气动车",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "日本海绝景, 白神山地, 津轻三味线, 观光列车, 强风停运, 不老不死温泉",
+    "character_personality_tags": [
+      "日本海绝景",
+      "白神山地",
+      "津轻三味线",
+      "观光列车",
+      "强风停运",
+      "不老不死温泉"
+    ],
+    "character_role": "五能·白神风姬",
+    "character_age": "大正·昭和初期的旅人姐姐，日本海绝景线的灵魂",
+    "character_catchphrase": "一日に一本で十分さ（一天一班就足够了）",
+    "fun_facts": "日本海绝景 | 白神山地 | 津轻三味线 | 观光列车 | 强风停运 | 不老不死温泉",
+    "opening_year": "1908年（能代—五所川原间开通）",
+    "key_milestone": "1908年（能代—五所川原间开通）"
+  }
+}

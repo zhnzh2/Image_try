@@ -74,7 +74,7 @@ def load_client() -> OpenAI:
 
 
 def load_project_config() -> dict:
-    """读取 lines/prompts.json 中的项目综述。"""
+    """读取 lines/prompts.json 中的项目配置。"""
     if not CONFIG_PATH.is_file():
         raise FileNotFoundError(f"项目配置文件不存在：{CONFIG_PATH.resolve()}")
 
@@ -84,36 +84,50 @@ def load_project_config() -> dict:
     if not isinstance(config, dict):
         raise ValueError("lines/prompts.json 顶层必须是 JSON 对象。")
 
-    if "common_prompt" not in config:
-        raise ValueError("lines/prompts.json 中缺少 common_prompt 字段。")
+    # 至少需要一个 common_prompt 或 character_only 模板
+    if "common_prompt" not in config and "character_only" not in config:
+        raise ValueError(
+            "lines/prompts.json 中至少需要 common_prompt 或 character_only 配置。"
+        )
 
     return config
 
 
-def build_poster_prompt(poster_config: dict, poster_vars: dict) -> str:
-    """将海报模板中的 {{变量}} 替换为线路实际值。"""
-    template = poster_config["prompt_template"]
-    for key, value in poster_vars.items():
+def build_prompt_from_template(template_config: dict, vars_dict: dict) -> str:
+    """将模板中的 {{变量}} 替换为实际值，并追加 anti_failure。"""
+    template = template_config["prompt_template"]
+    for key, value in vars_dict.items():
         template = template.replace("{{" + key + "}}", str(value))
-    # 追加防翻车补充
-    anti_failure = poster_config.get("anti_failure", "")
+    anti_failure = template_config.get("anti_failure", "")
     if anti_failure:
-        template = template + "\n\n" + anti_failure
+        template = template + "\n\n" + anti_failure.strip()
     return template
 
 
 def load_tasks(config: dict, mode: str) -> list[dict[str, str]]:
-    """扫描 lines/ 下各子文件夹，根据 mode 构建不同 prompt。
+    """扫描 lines/ 下各子文件夹，根据 mode 构建 prompt。
 
-    mode = character_only: 综述 common_prompt + line_specific
-    mode = poster:         海报模板 + poster_vars 替换
+    mode = character_only : character_only 模板 + poster_vars（新）
+                          或 fallback: common_prompt + line_specific（旧）
+    mode = poster         : poster 模板 + poster_vars
     """
     if not LINES_DIR.is_dir():
         raise FileNotFoundError(f"lines/ 目录不存在：{LINES_DIR.resolve()}")
 
     tasks: list[dict[str, str]] = []
     common_prompt = config.get("common_prompt", "")
-    poster_config = config.get("poster", {})
+
+    # 选择模板配置
+    if mode == "poster":
+        template_config = config.get("poster", {})
+        fallback = False
+    else:
+        # character_only：优先用新模板，没有则 fallback 到旧方式
+        template_config = config.get("character_only", {})
+        fallback = not template_config or not template_config.get("prompt_template")
+
+    if not fallback and not template_config.get("prompt_template"):
+        raise RuntimeError(f"lines/prompts.json 中缺少 {mode}.prompt_template。")
 
     for subdir in sorted(LINES_DIR.iterdir()):
         if not subdir.is_dir() or subdir.name.startswith("_"):
@@ -138,24 +152,20 @@ def load_tasks(config: dict, mode: str) -> list[dict[str, str]]:
         task_id = data.get("id", subdir.name)
         task_name = data.get("name", subdir.name)
 
-        if mode == "poster":
-            poster_vars = data.get("poster_vars")
-            if not poster_vars or not isinstance(poster_vars, dict):
-                print(f"✗ {subdir.name}/ 缺少 poster_vars，跳过")
-                continue
-            if not poster_config or not poster_config.get("prompt_template"):
-                raise RuntimeError(
-                    "lines/prompts.json 中缺少 poster.prompt_template。"
-                    "请确认 poster 模式的模板已配置。"
-                )
-            full_prompt = build_poster_prompt(poster_config, poster_vars)
-        else:
-            # character_only（默认）
+        if fallback:
+            # 旧方式：common_prompt + line_specific
             line_specific = data.get("line_specific", "")
             if not line_specific.strip():
                 print(f"✗ {subdir.name}/ 缺少 line_specific，跳过")
                 continue
             full_prompt = common_prompt + "\n" + line_specific.strip()
+        else:
+            # 新方式：模板 + poster_vars
+            vars_dict = data.get("poster_vars")
+            if not vars_dict or not isinstance(vars_dict, dict):
+                print(f"✗ {subdir.name}/ 缺少 poster_vars，跳过")
+                continue
+            full_prompt = build_prompt_from_template(template_config, vars_dict)
 
         tasks.append({
             "id": task_id,

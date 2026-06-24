@@ -1,0 +1,39 @@
+{
+  "id": "10_东海道线_jt",
+  "name": "东海道线 JT",
+  "name_ja": "",
+  "line_specific": "JR东日本东海道线 JT。主色橙（#FF6600）。源流1872 年。",
+  "poster_vars": {
+    "line_name_zh": "东海道线 JT",
+    "line_name_en": "Tokaido Line",
+    "line_code": "JT",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF6600",
+    "route_type": "东京—横滨—湘南方向的中长距离大动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "元祖, 海风与绿车, 湘南橙绿, 日本铁路活化石, 绝对的长姐, 上野东京线的本家",
+    "character_personality_tags": [
+      "元祖",
+      "海风与绿车",
+      "湘南橙绿",
+      "日本铁路活化石",
+      "绝对的长姐",
+      "上野东京线的本家"
+    ],
+    "character_role": "東海道 湘南",
+    "character_age": "家族中最年长的“元祖大姐”。她的存在本身，就是 JR 东日本首都圈历史的第一页。在所有线路中，她是绝对的本家栋梁，拥有毋庸置疑的最高辈分。",
+    "character_catchphrase": "别急，先过了川崎",
+    "fun_facts": "元祖 | 海风与绿车 | 湘南橙绿 | 日本铁路活化石 | 绝对的长姐 | 上野东京线的本家",
+    "opening_year": "1872 年",
+    "key_milestone": "1872 年"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "37_水户线",
+  "name": "水户线",
+  "name_ja": "水戸線",
+  "line_specific": "JR东日本水户线。主色淡蓝（#87CEEB）。全长50 公里。源流1889 年（小山—水户）。",
+  "poster_vars": {
+    "line_name_zh": "水户线",
+    "line_name_en": "Mito Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "淡蓝",
+    "line_color_hex": "#87CEEB",
+    "route_type": "茨城县西部·南部通往东京方向的重要通道",
+    "length": "50 公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "水户梅花, 筑波山, 偕乐园, 文静, 茨城腹地, 蓝白调和",
+    "character_personality_tags": [
+      "水户梅花",
+      "筑波山",
+      "偕乐园",
+      "文静",
+      "茨城腹地",
+      "蓝白调和"
+    ],
+    "character_role": "水戸・文の梅",
+    "character_age": "北关东明治老牌干线，气质清淡",
+    "character_catchphrase": "走水户线的人，不是为了赶时间。是为了看筑波山、访梅园，然后不知不觉就到水户了",
+    "fun_facts": "水户梅花 | 筑波山 | 偕乐园 | 文静 | 茨城腹地 | 蓝白调和",
+    "opening_year": "1889 年（小山—水户）",
+    "key_milestone": "1889 年（小山—水户）"
+  }
+}

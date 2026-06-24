@@ -1,0 +1,38 @@
+{
+  "id": "07_中央快速线",
+  "name": "中央线快速",
+  "name_ja": "中央線快速",
+  "line_specific": "JR东日本中央线快速。主色橙（#FF6600）。全长53.1 km（东京—高尾）。源流1889年（甲武铁道新宿—立川开通）。",
+  "poster_vars": {
+    "line_name_zh": "中央线快速",
+    "line_name_en": "Chuo Line Rapid",
+    "line_code": "JC",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF6600",
+    "route_type": "东京西向通勤快速干线",
+    "length": "53.1 km（东京—高尾）",
+    "stations": "25（快速运行区间）",
+    "loop_time": "约80分钟（东京—高尾）",
+    "service_pattern": "快速/特快/通勤特快等多种速度等级，跳站运行",
+    "rolling_stock": "E233系0番台",
+    "formation": "10辆编成（部分12辆化推进中）",
+    "main_stations": "东京、神田、御茶之水、四谷、新宿、中野、三鹰、国分寺、立川、八王子、高尾",
+    "related_lines": "JB 中央总武缓行线、JY 山手线、JC 青梅线、JC 五日市线、JH 横滨线",
+    "character_gender": "female",
+    "character_personality": "急性子, 行动派, 嘴很直, 热血, 速度至上",
+    "character_personality_tags": [
+      "急性子",
+      "行动派",
+      "嘴很直",
+      "热血",
+      "速度至上"
+    ],
+    "character_role": "东京西部的橙色疾风",
+    "character_age": "明治时代的热血大姐（源流1889年甲武铁道开通）",
+    "character_catchphrase": "让开，我是特快。",
+    "fun_facts": "东京西向最重要的通勤动脉 | 与中央总武缓行线是'特快姐姐与慢车妹妹'关系 | 新宿站是全世界最繁忙的车站之一 | 中野—三鹰间是著名动画产业聚集地 | 立川—高尾段兼具城市通勤与登山观光双重气质 | E233系0番台是JR东日本通勤型电车代表作",
+    "opening_year": "1889年（甲武铁道新宿—立川开通）",
+    "key_milestone": "1904年（延伸至东京站完成中央线基本格局）"
+  }
+}

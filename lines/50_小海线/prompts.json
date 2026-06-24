@@ -1,0 +1,40 @@
+{
+  "id": "50_小海线",
+  "name": "小海线",
+  "name_ja": "小海線",
+  "line_specific": "JR东日本小海线。主色青绿（#00A86B）。全长78.9公里。源流1935年。",
+  "poster_vars": {
+    "line_name_zh": "小海线",
+    "line_name_en": "Koumi Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "青绿",
+    "line_color_hex": "#00A86B",
+    "route_type": null,
+    "length": "78.9公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ110系气动车（小海线专用色：高原绿与山の青）",
+    "formation": "3辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "八岳, 高原, 野边山, 星空, 富士见, 诗人气质, キハ110",
+    "character_personality_tags": [
+      "八岳",
+      "高原",
+      "野边山",
+      "星空",
+      "富士见",
+      "诗人气质",
+      "キハ110"
+    ],
+    "character_role": "小海 そら",
+    "character_age": "昭和中期的高原之子，离天空最近的线路诗人",
+    "character_catchphrase": "在云上跑的时候，人会忘记地面上的烦恼",
+    "fun_facts": "八岳 | 高原 | 野边山 | 星空 | 富士见 | 诗人气质 | キハ110",
+    "opening_year": "1935年",
+    "key_milestone": "1935年"
+  }
+}

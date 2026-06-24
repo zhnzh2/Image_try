@@ -1,0 +1,39 @@
+{
+  "id": "24_五日市线",
+  "name": "五日市线",
+  "name_ja": "五日市線 JC",
+  "line_specific": "JR东日本五日市线。主色橙（#FF6600）。源流1925年。",
+  "poster_vars": {
+    "line_name_zh": "五日市线",
+    "line_name_en": "Itsukaichi Line",
+    "line_code": "JC",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF6600",
+    "route_type": "青梅线的支线",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "橙色短发, 秋川枫叶发饰, 溪谷小瓶, 铃铛脚链, 青梅线的安静妹妹, 东京最深的秘境向导",
+    "character_personality_tags": [
+      "橙色短发",
+      "秋川枫叶发饰",
+      "溪谷小瓶",
+      "铃铛脚链",
+      "青梅线的安静妹妹",
+      "东京最深的秘境向导"
+    ],
+    "character_role": "五日市·秋川谷の隠れ里少女",
+    "character_age": "大正末期出生的青梅线妹妹，深林中的安静向导",
+    "character_catchphrase": "秋川谷的秋天，能让你忘记东京",
+    "fun_facts": "橙色短发 | 秋川枫叶发饰 | 溪谷小瓶 | 铃铛脚链 | 青梅线的安静妹妹 | 东京最深的秘境向导",
+    "opening_year": "1925年",
+    "key_milestone": "1925年"
+  }
+}

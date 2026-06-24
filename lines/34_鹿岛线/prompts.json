@@ -1,0 +1,41 @@
+{
+  "id": "34_鹿岛线",
+  "name": "鹿岛线",
+  "name_ja": "鹿島線",
+  "line_specific": "JR东日本鹿岛线。主色红（#CC0000）。源流1970 年（香取—鹿岛神宫开通）。",
+  "poster_vars": {
+    "line_name_zh": "鹿岛线",
+    "line_name_en": "Kashima Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "红",
+    "line_color_hex": "#CC0000",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "足球, 鹿岛神宫, 工业地带, 昭和新锐, 红色旋风, 应援团长, 鹿之魂, 北关东地方线路",
+    "character_personality_tags": [
+      "足球",
+      "鹿岛神宫",
+      "工业地带",
+      "昭和新锐",
+      "红色旋风",
+      "应援团长",
+      "鹿之魂",
+      "北关东地方线路"
+    ],
+    "character_role": "鹿島 蹴斗（かしま・しゅうと）",
+    "character_age": "昭和后期的“工业与足球新星”，房总家族中最年轻动感的战士。",
+    "character_catchphrase": "ゴールは、決める",
+    "fun_facts": "足球 | 鹿岛神宫 | 工业地带 | 昭和新锐 | 红色旋风 | 应援团长 | 鹿之魂 | 北关东地方线路",
+    "opening_year": "1970 年（香取—鹿岛神宫开通）",
+    "key_milestone": "1970 年（香取—鹿岛神宫开通）"
+  }
+}

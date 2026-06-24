@@ -1,0 +1,40 @@
+{
+  "id": "03_北陆新干线",
+  "name": "北陆新干线",
+  "name_ja": "北陸新幹線（JR东日本管区）",
+  "line_specific": "JR东日本北陆新干线。主色浅蓝（#00A7E1）。全长176.9公里。源流1997年（高崎—长野段开业，当时称“长野新干线”）。",
+  "poster_vars": {
+    "line_name_zh": "北陆新干线",
+    "line_name_en": "Hokuriku Shinkansen",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "浅蓝",
+    "line_color_hex": "#00A7E1",
+    "route_type": null,
+    "length": "176.9公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E7系（12辆编成",
+    "formation": "12辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "浅蓝, 轻井泽, 长野冬奥会, 碓冰峠, 跨社直通, 艺术与历史, 蓝宝石",
+    "character_personality_tags": [
+      "浅蓝",
+      "轻井泽",
+      "长野冬奥会",
+      "碓冰峠",
+      "跨社直通",
+      "艺术与历史",
+      "蓝宝石"
+    ],
+    "character_role": "北陆・光辉之蓝宝石",
+    "character_age": "平成初期诞生的优雅公主，新干线家族中的跨社亲和者",
+    "character_catchphrase": "下一站，是历史，还是未来呢",
+    "fun_facts": "浅蓝 | 轻井泽 | 长野冬奥会 | 碓冰峠 | 跨社直通 | 艺术与历史 | 蓝宝石",
+    "opening_year": "1997年（高崎—长野段开业，当时称“长野新干线”）",
+    "key_milestone": "1997年（高崎—长野段开业，当时称“长野新干线”）"
+  }
+}

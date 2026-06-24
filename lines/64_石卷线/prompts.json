@@ -1,0 +1,32 @@
+{
+  "id": "64_ishinomaki",
+  "name": "石卷线",
+  "name_ja": "石巻線",
+  "line_specific": "JR东日本石卷线。主色粉（#FF69B4）。全长44.7km。源流1912年（小牛田—前谷地间）。",
+  "poster_vars": {
+    "line_name_zh": "石卷线",
+    "line_name_en": "Ishinomaki Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "粉",
+    "line_color_hex": "#FF69B4",
+    "route_type": "地方交通线（三陆海岸渔港连接线）",
+    "length": "44.7 km",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": "部分列车从小牛田直通东北本线至仙台方向",
+    "rolling_stock": "キハ110系",
+    "formation": "1-2辆编成",
+    "main_stations": "小牛田、前谷地、石卷、女川",
+    "related_lines": "东北本线、气仙沼线BRT",
+    "character_gender": "female",
+    "character_personality": "坚韧重生, 乐观开朗, 渔村少女, 海啸幸存者, 漫画之乡, 复兴象征",
+    "character_personality_tags": ["坚韧重生", "乐观开朗", "渔村少女", "海啸幸存者", "漫画之乡", "复兴象征"],
+    "character_role": "石卷·三陆复兴之渔火娘",
+    "character_age": "大正初期诞生的渔港少女，震灾后重生的坚韧象征（1912年小牛田—前谷地间开通）",
+    "character_catchphrase": "海啸冲走了站舍，但冲不走我们回家的路。",
+    "fun_facts": "东日本大震灾后成为三陆海岸复兴的象征 | 女川站被海啸损毁后以崭新姿态重建 | 站前设有足汤 | 沿线是石森章太郎故乡 | 石卷站充满漫画元素 | 连接东北本线与三陆渔港",
+    "opening_year": "1912年（小牛田—前谷地间）",
+    "key_milestone": "2011年后（震灾复兴，女川站重建）"
+  }
+}

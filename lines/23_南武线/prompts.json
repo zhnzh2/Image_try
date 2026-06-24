@@ -1,0 +1,39 @@
+{
+  "id": "23_南武线",
+  "name": "南武线",
+  "name_ja": "南武線 JN",
+  "line_specific": "JR东日本南武线。主色黄（#FFCC00）。源流1927年。",
+  "poster_vars": {
+    "line_name_zh": "南武线",
+    "line_name_en": "Nambu Line",
+    "line_code": "JN",
+    "operator": "JR东日本",
+    "line_color": "黄",
+    "line_color_hex": "#FFCC00",
+    "route_type": "川崎市与多摩地域之间最重要的通勤动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E233系8000番台",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "黄色疾走, 多摩川右岸, 昭和秒表, 短跑少女, 川崎—立川快信, 黄橙褐三色发带",
+    "character_personality_tags": [
+      "黄色疾走",
+      "多摩川右岸",
+      "昭和秒表",
+      "短跑少女",
+      "川崎—立川快信",
+      "黄橙褐三色发带"
+    ],
+    "character_role": "南武·多摩川疾走少女",
+    "character_age": "昭和初期出生的通勤短跑选手",
+    "character_catchphrase": "我虽然不像山手线那样是女王，但我可是川崎和立川之间最快的信使",
+    "fun_facts": "黄色疾走 | 多摩川右岸 | 昭和秒表 | 短跑少女 | 川崎—立川快信 | 黄橙褐三色发带",
+    "opening_year": "1927年",
+    "key_milestone": "1927年"
+  }
+}

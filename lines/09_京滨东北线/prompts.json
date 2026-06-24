@@ -1,0 +1,38 @@
+{
+  "id": "09_京滨东北线",
+  "name": "京滨东北线",
+  "name_ja": "京浜東北線",
+  "line_specific": "JR东日本京滨东北线。主色天蓝（#00BFFF）。全长59.1 km（大宫—横滨）。源流1914年（京滨线开业）。",
+  "poster_vars": {
+    "line_name_zh": "京滨东北线",
+    "line_name_en": "Keihin-Tohoku Line",
+    "line_code": "JK",
+    "operator": "JR东日本",
+    "line_color": "天蓝",
+    "line_color_hex": "#00BFFF",
+    "route_type": "首都圈南北通勤干线",
+    "length": "59.1 km（大宫—横滨）",
+    "stations": "36（含根岸线直通区间）",
+    "loop_time": "约90分钟（大宫—大船全线）",
+    "service_pattern": "快速运行（与山手线并行区间跳站），与根岸线直通至大船",
+    "rolling_stock": "E233系1000番台",
+    "formation": "10辆编成",
+    "main_stations": "大宫、赤羽、上野、秋叶原、东京、品川、川崎、横滨、樱木町、矶子、大船",
+    "related_lines": "JY 山手线、JK 根岸线、JU 上野东京线、JS 湘南新宿线、JT 东海道线、JH 横滨线",
+    "character_gender": "male",
+    "character_personality": "守时, 严谨, 略毒舌, 责任心强, 通勤班长气质",
+    "character_personality_tags": [
+      "守时",
+      "严谨",
+      "略毒舌",
+      "责任心强",
+      "通勤班长气质"
+    ],
+    "character_role": "南北贯穿东京的通勤班长",
+    "character_age": "大正时代的城市通勤骨干（源流1914年京滨线开业）",
+    "character_catchphrase": "你绕，我跳站。",
+    "fun_facts": "与山手线在东京—品川间并行但跳站运行 | 原名京滨线，后与东北本线贯通 | 大宫到大船纵贯首都圈南北 | 主力E233系1000番台于2013年投入 | 与根岸线无缝直通 | 东京站—上野站间是首都圈最密集的通勤区间之一",
+    "opening_year": "1914年（京滨线开业）",
+    "key_milestone": "1964—1973年（根岸线延伸至大船）"
+  }
+}

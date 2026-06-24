@@ -1,0 +1,40 @@
+{
+  "id": "43_白新线",
+  "name": "白新线",
+  "name_ja": "",
+  "line_specific": "JR东日本白新线。主色绿（#90EE90）。全长27.3公里。源流1917年（货运先行开通）。",
+  "poster_vars": {
+    "line_name_zh": "白新线",
+    "line_name_en": "Hakushin Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "绿",
+    "line_color_hex": "#90EE90",
+    "route_type": "新潟平原上的通勤小动脉",
+    "length": "27.3公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E129系两辆或四辆编成",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "新潟平原, 越光米, 通勤务实, 短距离, 稻穗, 货运起步, 新潟都市圈",
+    "character_personality_tags": [
+      "新潟平原",
+      "越光米",
+      "通勤务实",
+      "短距离",
+      "稻穗",
+      "货运起步",
+      "新潟都市圈"
+    ],
+    "character_role": "白新·新潟平野の稻穗娘",
+    "character_age": "大正世代出生的务实少女，新潟地区的短距离通勤干将",
+    "character_catchphrase": "我没有新干线的速度，但我能让所有人都赶上回家的晚饭",
+    "fun_facts": "新潟平原 | 越光米 | 通勤务实 | 短距离 | 稻穗 | 货运起步 | 新潟都市圈",
+    "opening_year": "1917年（货运先行开通）",
+    "key_milestone": "1917年（货运先行开通）"
+  }
+}

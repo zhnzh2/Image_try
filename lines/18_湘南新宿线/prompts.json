@@ -1,0 +1,38 @@
+{
+  "id": "18_湘南新宿线",
+  "name": "湘南新宿线",
+  "name_ja": "湘南新宿ライン JS",
+  "line_specific": "JR东日本湘南新宿线。主色橙（#FF8C00）。源流2001 年（运行系统开始）。",
+  "poster_vars": {
+    "line_name_zh": "湘南新宿线",
+    "line_name_en": "Shonan-Shinjuku Line",
+    "line_code": "JS",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF8C00",
+    "route_type": "首都圈纵贯通勤的“黄金通道",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E231系1000番台、E233系3000番台",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "贯通千金, 新宿枢纽, 橙绿长裙, 北关东与湘南的桥梁, 晚点连锁体",
+    "character_personality_tags": [
+      "贯通千金",
+      "新宿枢纽",
+      "橙绿长裙",
+      "北关东与湘南的桥梁",
+      "晚点连锁体"
+    ],
+    "character_role": "湘南新宿·贯通令嬢",
+    "character_age": "平成新世代，但继承了昭和老线路血脉的“贵族千金”",
+    "character_catchphrase": "你们不用换车，我来帮你们换",
+    "fun_facts": "贯通千金 | 新宿枢纽 | 橙绿长裙 | 北关东与湘南的桥梁 | 晚点连锁体",
+    "opening_year": "2001 年（运行系统开始）",
+    "key_milestone": "2001 年（运行系统开始）"
+  }
+}

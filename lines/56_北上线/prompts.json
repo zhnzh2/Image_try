@@ -1,0 +1,39 @@
+{
+  "id": "56_北上线",
+  "name": "北上线",
+  "name_ja": "北上線",
+  "line_specific": "JR东日本北上线。主色靛蓝（#003399）。源流1914年（横手—湯田间开通）。",
+  "poster_vars": {
+    "line_name_zh": "北上线",
+    "line_name_en": "Kitakami Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "靛蓝",
+    "line_color_hex": "#003399",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ100系、キハ110系气动车（1-2辆编成）",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "北上川, 峡谷, 温泉乡, 红叶, 气动车, 山间摆渡人",
+    "character_personality_tags": [
+      "北上川",
+      "峡谷",
+      "温泉乡",
+      "红叶",
+      "气动车",
+      "山间摆渡人"
+    ],
+    "character_role": "北上·峡谷船头",
+    "character_age": "大正初年的山峡摆渡人",
+    "character_catchphrase": "ゆっくり行こう、湯に浸かっていけ（慢慢走，泡个汤再走吧）",
+    "fun_facts": "北上川 | 峡谷 | 温泉乡 | 红叶 | 气动车 | 山间摆渡人",
+    "opening_year": "1914年（横手—湯田间开通）",
+    "key_milestone": "1914年（横手—湯田间开通）"
+  }
+}

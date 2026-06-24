@@ -1,9 +1,6 @@
-"""校验 & 预览工具：扫描 lines/ 下所有线路文件夹，检查格式并展示各线路的完整 prompt。
+"""校验 & 预览工具：扫描 lines/ 下所有线路文件夹，检查 character_only 和 poster 两套模板的变量完整性。
 
-用法：
-  python merge_prompts.py
-
-会自动跳过 _template 文件夹。
+用法：python merge_prompts.py
 """
 
 import json
@@ -15,22 +12,44 @@ CONFIG_PATH = LINES_DIR / "prompts.json"
 
 
 def main() -> None:
-    # 读取综述
     if not CONFIG_PATH.is_file():
-        print(f"✗ 综述文件不存在：{CONFIG_PATH.resolve()}")
+        print(f"✗ 配置文件不存在：{CONFIG_PATH.resolve()}")
         return
 
     with CONFIG_PATH.open("r", encoding="utf-8") as f:
         config = json.load(f)
 
-    common_prompt = config.get("common_prompt", "")
-    print(f"项目：{config.get('project', '（未命名）')}")
-    print(f"综述 prompt 长度：{len(common_prompt)} 字符")
+    project = config.get("project", "（未命名）")
+    has_poster = bool(config.get("poster", {}).get("prompt_template"))
+    has_character_only = bool(config.get("character_only", {}).get("prompt_template"))
+    has_common = bool(config.get("common_prompt"))
+
+    print(f"项目：{project}")
+    print(f"poster 模板：{'✓' if has_poster else '✗ 未配置'}")
+    print(f"character_only 模板：{'✓' if has_character_only else '✗ 未配置（fallback 到 common_prompt + line_specific）'}")
+    print(f"common_prompt（legacy）：{'✓' if has_common else '✗ 未配置'}")
     print()
 
-    has_poster = config.get("poster", {}).get("prompt_template")
+    # 模板变量名收集
+    poster_vars_needed = set()
+    char_vars_needed = set()
+    if has_poster:
+        t = config["poster"]["prompt_template"]
+        poster_vars_needed = {w.split("}}")[0] for w in t.split("{{") if "}}" in w}
+    if has_character_only:
+        t = config["character_only"]["prompt_template"]
+        char_vars_needed = {w.split("}}")[0] for w in t.split("{{") if "}}" in w}
 
-    # 扫描子文件夹
+    if poster_vars_needed:
+        print(f"poster 模板变量（{len(poster_vars_needed)} 个）：{sorted(poster_vars_needed)}")
+    if char_vars_needed:
+        print(f"character_only 模板变量（{len(char_vars_needed)} 个）：{sorted(char_vars_needed)}")
+    all_needed = poster_vars_needed | char_vars_needed
+    if all_needed:
+        print(f"合并去重（{len(all_needed)} 个）：{sorted(all_needed)}")
+    print()
+
+    # 扫描线路
     found = 0
     for subdir in sorted(LINES_DIR.iterdir()):
         if not subdir.is_dir() or subdir.name.startswith("_"):
@@ -54,41 +73,38 @@ def main() -> None:
 
         line_id = data.get("id", "")
         line_name = data.get("name", "")
-        line_specific = data.get("line_specific", "")
-        poster_vars = data.get("poster_vars")
+        poster_vars = data.get("poster_vars", {})
 
         missing = []
         if not line_id:
             missing.append("id")
         if not line_name:
             missing.append("name")
-        if not line_specific.strip():
-            missing.append("line_specific")
-        if has_poster and not poster_vars:
-            missing.append("poster_vars（海报模式需要）")
+
+        # 检查 poster_vars 是否覆盖所有模板变量
+        if poster_vars and all_needed:
+            missing_vars = all_needed - set(poster_vars.keys())
+            if missing_vars:
+                missing.append(f"poster_vars 缺少字段：{sorted(missing_vars)}")
+
+        # 如果没有 poster_vars 也没有 line_specific，警告
+        if not poster_vars and not data.get("line_specific"):
+            missing.append("poster_vars 或 line_specific（至少需要一个）")
 
         if missing:
-            print(f"✗ {subdir.name}/ ：缺少字段 {missing}")
+            print(f"✗ {subdir.name}/ ：{'; '.join(missing)}")
             continue
 
-        full_prompt = common_prompt + "\n" + line_specific.strip()
         found += 1
 
         print(f"✓ [{line_id}] {line_name}")
-        print(f"  character_only prompt：{len(full_prompt)} 字符")
-
-        if has_poster and poster_vars:
-            poster_prompt = config["poster"]["prompt_template"]
-            for k, v in poster_vars.items():
-                poster_prompt = poster_prompt.replace("{{" + k + "}}", str(v))
-            print(f"  poster prompt：{len(poster_prompt)} 字符")
-            print(f"  poster_vars 字段：{list(poster_vars.keys())}")
-
+        if poster_vars:
+            print(f"  poster_vars：{len(poster_vars)} 个字段，覆盖 {len(poster_vars.keys() & all_needed)}/{len(all_needed)} 个所需变量")
+        if data.get("line_specific"):
+            print(f"  line_specific：{len(data['line_specific'])} 字符（legacy）")
         print()
 
     print(f"共扫描到 {found} 条有效线路。")
-    if has_poster:
-        print("海报模板已配置 ✓")
 
 
 if __name__ == "__main__":

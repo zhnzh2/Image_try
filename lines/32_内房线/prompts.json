@@ -1,0 +1,40 @@
+{
+  "id": "32_内房线",
+  "name": "内房线",
+  "name_ja": "内房線",
+  "line_specific": "JR东日本内房线。主色深蓝（#003366）。源流1912 年（木更津—那古船形开通）。",
+  "poster_vars": {
+    "line_name_zh": "内房线",
+    "line_name_en": "Uchibo Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深蓝",
+    "line_color_hex": "#003366",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "东京湾, 珍珠, 馆山, 细波, 工业静海, 房总最南, 守护姐姐",
+    "character_personality_tags": [
+      "东京湾",
+      "珍珠",
+      "馆山",
+      "细波",
+      "工业静海",
+      "房总最南",
+      "守护姐姐"
+    ],
+    "character_role": "内房 珠姫（うちぼう・たまき）",
+    "character_age": "大正初期诞生的“湾岸珍珠姬”，相较外房的奔放，她是沉静的东京湾守护者。",
+    "character_catchphrase": "你只管追浪，我来守住航线",
+    "fun_facts": "东京湾 | 珍珠 | 馆山 | 细波 | 工业静海 | 房总最南 | 守护姐姐",
+    "opening_year": "1912 年（木更津—那古船形开通）",
+    "key_milestone": "1912 年（木更津—那古船形开通）"
+  }
+}

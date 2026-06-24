@@ -1,0 +1,40 @@
+{
+  "id": "47_米坂线",
+  "name": "米坂线",
+  "name_ja": "米坂線",
+  "line_specific": "JR东日本米坂线。主色深蓝（#003366）。全长90.7公里。源流1919年。",
+  "poster_vars": {
+    "line_name_zh": "米坂线",
+    "line_name_en": "Yonesaka Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深蓝",
+    "line_color_hex": "#003366",
+    "route_type": null,
+    "length": "90.7公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ110系气动车",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "豪雪, 山岳, 饭丰连峰, 荒川峡谷, 冬日孤行, 红叶, キハ110",
+    "character_personality_tags": [
+      "豪雪",
+      "山岳",
+      "饭丰连峰",
+      "荒川峡谷",
+      "冬日孤行",
+      "红叶",
+      "キハ110"
+    ],
+    "character_role": "米坂 こゆき",
+    "character_age": "大正时代的山岳旅人，沉稳而略带寂寥",
+    "character_catchphrase": "雪不是敌人，是伙伴",
+    "fun_facts": "豪雪 | 山岳 | 饭丰连峰 | 荒川峡谷 | 冬日孤行 | 红叶 | キハ110",
+    "opening_year": "1919年",
+    "key_milestone": "1919年"
+  }
+}

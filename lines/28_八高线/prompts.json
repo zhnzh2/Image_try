@@ -1,0 +1,39 @@
+{
+  "id": "28_八高线",
+  "name": "八高线",
+  "name_ja": "八高線",
+  "line_specific": "JR东日本八高线。主色灰（#808080）。全长92.0公里。源流1931年。",
+  "poster_vars": {
+    "line_name_zh": "八高线",
+    "line_name_en": "Hachiko Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "灰",
+    "line_color_hex": "#808080",
+    "route_type": null,
+    "length": "92.0公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "半身现代半身昭和, 高丽川分界, 209系与キハ110, 时光旅人, 旧宿场町向导, 双面背包",
+    "character_personality_tags": [
+      "半身现代半身昭和",
+      "高丽川分界",
+      "209系与キハ110",
+      "时光旅人",
+      "旧宿场町向导",
+      "双面背包"
+    ],
+    "character_role": "八高·半分電化の時越え旅人",
+    "character_age": "昭和初期出生的山野穿越者，半身现代半身昭和的时光旅人",
+    "character_catchphrase": "快有快的路，慢有慢的道，我两条都能带你走",
+    "fun_facts": "半身现代半身昭和 | 高丽川分界 | 209系与キハ110 | 时光旅人 | 旧宿场町向导 | 双面背包",
+    "opening_year": "1931年",
+    "key_milestone": "1931年"
+  }
+}

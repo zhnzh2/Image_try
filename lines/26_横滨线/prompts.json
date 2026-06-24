@@ -1,0 +1,39 @@
+{
+  "id": "26_横滨线",
+  "name": "横滨线",
+  "name_ja": "横浜線 JH",
+  "line_specific": "JR东日本横滨线。主色莺绿（#7CFC00）。全长42.6公里。源流1908年。",
+  "poster_vars": {
+    "line_name_zh": "横滨线",
+    "line_name_en": "Yokohama Line",
+    "line_code": "JH",
+    "operator": "JR东日本",
+    "line_color": "莺绿",
+    "line_color_hex": "#7CFC00",
+    "route_type": "重要的横贯通勤动脉",
+    "length": "42.6公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E233系6000番台",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "莺色连衣裙, 换乘手环达人, 横滨出身但心系多摩, 町田商业街达人, 满员电车生存术, 名字误导人的转学生气质",
+    "character_personality_tags": [
+      "莺色连衣裙",
+      "换乘手环达人",
+      "横滨出身但心系多摩",
+      "町田商业街达人",
+      "满员电车生存术",
+      "名字误导人的转学生气质"
+    ],
+    "character_role": "横浜·緑の多摩通い姫",
+    "character_age": "名字老但气质年轻的大正姐姐，横滨出身却心系多摩的换乘达人",
+    "character_catchphrase": "挤归挤，我们横滨线从来不迟到",
+    "fun_facts": "莺色连衣裙 | 换乘手环达人 | 横滨出身但心系多摩 | 町田商业街达人 | 满员电车生存术 | 名字误导人的转学生气质",
+    "opening_year": "1908年",
+    "key_milestone": "1908年"
+  }
+}

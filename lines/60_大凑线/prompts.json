@@ -1,0 +1,39 @@
+{
+  "id": "60_大凑线",
+  "name": "大凑线",
+  "name_ja": "大湊線",
+  "line_specific": "JR东日本大凑线。主色白（#FFFFFF）。全长58.4公里。源流1921年（野内—大湊间开通）。",
+  "poster_vars": {
+    "line_name_zh": "大凑线",
+    "line_name_en": "Ominato Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "白",
+    "line_color_hex": "#FFFFFF",
+    "route_type": null,
+    "length": "58.4公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ100系、キハ110系气动车（1-2辆编成）",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "恐山, 灵场, 下北半岛, 气动车, 巫女, 冥途引路人",
+    "character_personality_tags": [
+      "恐山",
+      "灵场",
+      "下北半岛",
+      "气动车",
+      "巫女",
+      "冥途引路人"
+    ],
+    "character_role": "大凑·恐山巫女",
+    "character_age": "大正末年的下北半岛巫女",
+    "character_catchphrase": "イタコは語る、海を渡った魂もここに来る（巫女在说话，渡海的灵魂也来到这里）",
+    "fun_facts": "恐山 | 灵场 | 下北半岛 | 气动车 | 巫女 | 冥途引路人",
+    "opening_year": "1921年（野内—大湊间开通）",
+    "key_milestone": "1921年（野内—大湊间开通）"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "14_高崎线",
+  "name": "高崎线",
+  "name_ja": "高崎線",
+  "line_specific": "JR东日本高崎线。主色橙（#FF8C00）。源流1883 年（上野—前桥间初段开业）。",
+  "poster_vars": {
+    "line_name_zh": "高崎线",
+    "line_name_en": "Takasaki Line",
+    "line_code": "JU",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF8C00",
+    "route_type": "首都圈通往群马方向的交通大动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E231 系 1000 番台与 E233 系 3000 番台",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "北关东, 长弓, 耐力, 熊谷, 高崎, 绿色车, 双线直通守护者",
+    "character_personality_tags": [
+      "北关东",
+      "长弓",
+      "耐力",
+      "熊谷",
+      "高崎",
+      "绿色车",
+      "双线直通守护者"
+    ],
+    "character_role": "高崎·北关东长弓",
+    "character_age": "北关东组最年长的姐姐，明治老牌干线",
+    "character_catchphrase": "北风不会迟到，我也不会",
+    "fun_facts": "北关东 | 长弓 | 耐力 | 熊谷 | 高崎 | 绿色车 | 双线直通守护者",
+    "opening_year": "1883 年（上野—前桥间初段开业）",
+    "key_milestone": "1883 年（上野—前桥间初段开业）"
+  }
+}

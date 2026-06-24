@@ -1,0 +1,40 @@
+{
+  "id": "16_川越线",
+  "name": "川越线",
+  "name_ja": "川越線",
+  "line_specific": "JR东日本川越线。主色深绿（#2E8B57）。源流1940 年（大宫—川越间开通）。",
+  "poster_vars": {
+    "line_name_zh": "川越线",
+    "line_name_en": "Kawagoe Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深绿",
+    "line_color_hex": "#2E8B57",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "小江户, 和装, 深绿, 短编组, 川越菓子, 直通埼京, 时空穿梭者",
+    "character_personality_tags": [
+      "小江户",
+      "和装",
+      "深绿",
+      "短编组",
+      "川越菓子",
+      "直通埼京",
+      "时空穿梭者"
+    ],
+    "character_role": "川越·小江户和装疾行",
+    "character_age": "昭和中期出生的和风运动少女",
+    "character_catchphrase": "老町的茶和菓子，不能迟到哦",
+    "fun_facts": "小江户 | 和装 | 深绿 | 短编组 | 川越菓子 | 直通埼京 | 时空穿梭者",
+    "opening_year": "1940 年（大宫—川越间开通）",
+    "key_milestone": "1940 年（大宫—川越间开通）"
+  }
+}

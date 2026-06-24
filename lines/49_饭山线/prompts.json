@@ -1,0 +1,40 @@
+{
+  "id": "49_饭山线",
+  "name": "饭山线",
+  "name_ja": "飯山線",
+  "line_specific": "JR东日本饭山线。主色白（#FFFFFF）。全长96.7公里。源流1933年。",
+  "poster_vars": {
+    "line_name_zh": "饭山线",
+    "line_name_en": "Iiyama Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "白",
+    "line_color_hex": "#FFFFFF",
+    "route_type": null,
+    "length": "96.7公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ110系气动车",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "豪雪, 千曲川, 野泽温泉, 除雪, 红叶, 韧劲, キハ110",
+    "character_personality_tags": [
+      "豪雪",
+      "千曲川",
+      "野泽温泉",
+      "除雪",
+      "红叶",
+      "韧劲",
+      "キハ110"
+    ],
+    "character_role": "飯山 ゆきみ",
+    "character_age": "昭和初期的豪雪之姬，与雪共生、与雪抗争的坚韧女性",
+    "character_catchphrase": "雪は味方、敵じゃない",
+    "fun_facts": "豪雪 | 千曲川 | 野泽温泉 | 除雪 | 红叶 | 韧劲 | キハ110",
+    "opening_year": "1933年",
+    "key_milestone": "1933年"
+  }
+}

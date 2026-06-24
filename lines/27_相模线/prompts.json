@@ -1,0 +1,39 @@
+{
+  "id": "27_相模线",
+  "name": "相模线",
+  "name_ja": "相模線",
+  "line_specific": "JR东日本相模线。主色青绿（#00A86B）。全长33.3公里。源流1921年。",
+  "poster_vars": {
+    "line_name_zh": "相模线",
+    "line_name_en": "Sagami Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "青绿",
+    "line_color_hex": "#00A86B",
+    "route_type": null,
+    "length": "33.3公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "青绿棉布, 藤编便当篮, 相模川泥土, 国铁收养的私铁遗孤, 朴素谦逊, 单线田園的守望者",
+    "character_personality_tags": [
+      "青绿棉布",
+      "藤编便当篮",
+      "相模川泥土",
+      "国铁收养的私铁遗孤",
+      "朴素谦逊",
+      "单线田園的守望者"
+    ],
+    "character_role": "相模·田園の青緑乙女",
+    "character_age": "大正末期出生的朴素乡村少女，国铁收养的私铁遗孤",
+    "character_catchphrase": "单线也没什么不好，至少不会走错方向",
+    "fun_facts": "青绿棉布 | 藤编便当篮 | 相模川泥土 | 国铁收养的私铁遗孤 | 朴素谦逊 | 单线田園的守望者",
+    "opening_year": "1921年",
+    "key_milestone": "1921年"
+  }
+}

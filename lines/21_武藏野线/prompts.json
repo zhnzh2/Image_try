@@ -1,0 +1,39 @@
+{
+  "id": "21_武藏野线",
+  "name": "武藏野线",
+  "name_ja": "武蔵野線 JM",
+  "line_specific": "JR东日本武藏野线。主色橙（#FF8C00）。源流1973 年（新松户—府中本町）。",
+  "poster_vars": {
+    "line_name_zh": "武藏野线",
+    "line_name_en": "Musashino Line",
+    "line_code": "JM",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF8C00",
+    "route_type": "首都圈的外环大动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E231系0番台",
+    "formation": "8辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "外环腰带, 货运出身, 寡言实干, 橙色工装, 通勤支撑者, 首都圈外围线路",
+    "character_personality_tags": [
+      "外环腰带",
+      "货运出身",
+      "寡言实干",
+      "橙色工装",
+      "通勤支撑者",
+      "首都圈外围线路"
+    ],
+    "character_role": "武藏野·外环腰带守人",
+    "character_age": "昭和后期的寡言实干者，原是货运出身，后转职为通勤战士",
+    "character_catchphrase": "你们去都心，我绕着走",
+    "fun_facts": "外环腰带 | 货运出身 | 寡言实干 | 橙色工装 | 通勤支撑者 | 首都圈外围线路",
+    "opening_year": "1973 年（新松户—府中本町）",
+    "key_milestone": "1973 年（新松户—府中本町）"
+  }
+}

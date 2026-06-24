@@ -1,0 +1,40 @@
+{
+  "id": "40_乌山线",
+  "name": "乌山线",
+  "name_ja": "烏山線",
+  "line_specific": "JR东日本乌山线。主色米白（#F5F5DC）。全长20 公里。源流1923 年（宝积寺—乌山）。",
+  "poster_vars": {
+    "line_name_zh": "乌山线",
+    "line_name_en": "Karasuyama Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "米白",
+    "line_color_hex": "#F5F5DC",
+    "route_type": "栃木县东部山间的一段短小盲肠线。她不与其他干线",
+    "length": "20 公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "乌山和纸, 那珂川, 盲肠线, 蓄电池电车, 孤高, 短小精悍, 独立少女",
+    "character_personality_tags": [
+      "乌山和纸",
+      "那珂川",
+      "盲肠线",
+      "蓄电池电车",
+      "孤高",
+      "短小精悍",
+      "独立少女"
+    ],
+    "character_role": "烏山・那珂の孤高",
+    "character_age": "大正·昭和初期出生的短小盲肠线少女",
+    "character_catchphrase": "我只有 20 公里，但这 20 公里里什么都有——和纸、那珂川，还有山",
+    "fun_facts": "乌山和纸 | 那珂川 | 盲肠线 | 蓄电池电车 | 孤高 | 短小精悍 | 独立少女",
+    "opening_year": "1923 年（宝积寺—乌山）",
+    "key_milestone": "1923 年（宝积寺—乌山）"
+  }
+}

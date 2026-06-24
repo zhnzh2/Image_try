@@ -1,0 +1,39 @@
+{
+  "id": "55_男鹿线",
+  "name": "男鹿线",
+  "name_ja": "男鹿線",
+  "line_specific": "JR东日本男鹿线。主色红（#CC0000）。全长26.4公里。源流1913年（船川—男鹿间开通）。",
+  "poster_vars": {
+    "line_name_zh": "男鹿线",
+    "line_name_en": "Oga Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "红",
+    "line_color_hex": "#CC0000",
+    "route_type": null,
+    "length": "26.4公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ40系、キハ48系气动车（1-2辆编成）",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "生剥鬼节, 男鹿半岛, 秋田民俗, 气动车, 日本海, 安静的地方巫女",
+    "character_personality_tags": [
+      "生剥鬼节",
+      "男鹿半岛",
+      "秋田民俗",
+      "气动车",
+      "日本海",
+      "安静的地方巫女"
+    ],
+    "character_role": "男鹿·生剥鬼姬",
+    "character_age": "大正初年的半岛巫女",
+    "character_catchphrase": "ここにはなまはげがいるから（因为这里有生剥鬼在看着呢）",
+    "fun_facts": "生剥鬼节 | 男鹿半岛 | 秋田民俗 | 气动车 | 日本海 | 安静的地方巫女",
+    "opening_year": "1913年（船川—男鹿间开通）",
+    "key_milestone": "1913年（船川—男鹿间开通）"
+  }
+}

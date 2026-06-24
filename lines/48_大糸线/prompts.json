@@ -1,0 +1,40 @@
+{
+  "id": "48_大糸线",
+  "name": "大糸线",
+  "name_ja": "",
+  "line_specific": "JR东日本大糸线。主色灰绿（#808080）。全长70.1公里。源流1930年。",
+  "poster_vars": {
+    "line_name_zh": "大糸线",
+    "line_name_en": "Oito Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "灰绿",
+    "line_color_hex": "#808080",
+    "route_type": null,
+    "length": "70.1公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E127系",
+    "formation": "2辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "北阿尔卑斯, 登山, 安昙野, 白马, 温泉, 高原, 穗高神社",
+    "character_personality_tags": [
+      "北阿尔卑斯",
+      "登山",
+      "安昙野",
+      "白马",
+      "温泉",
+      "高原",
+      "穗高神社"
+    ],
+    "character_role": "大糸 しなの",
+    "character_age": "昭和初年的高原旅人，兼具山岳信仰与温泉气质",
+    "character_catchphrase": "穂高岳的日出，值得你三点起床",
+    "fun_facts": "北阿尔卑斯 | 登山 | 安昙野 | 白马 | 温泉 | 高原 | 穗高神社",
+    "opening_year": "1930年",
+    "key_milestone": "1930年"
+  }
+}

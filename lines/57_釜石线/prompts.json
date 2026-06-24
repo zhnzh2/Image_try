@@ -1,0 +1,39 @@
+{
+  "id": "57_釜石线",
+  "name": "釜石线",
+  "name_ja": "釜石線",
+  "line_specific": "JR东日本釜石线。主色棕（#8B4513）。全长90.2公里。源流1914年（花卷—仙人峠间开通）。",
+  "poster_vars": {
+    "line_name_zh": "釜石线",
+    "line_name_en": "Kamaishi Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "棕",
+    "line_color_hex": "#8B4513",
+    "route_type": "穿越北上山地、连接内陆与三陆海岸的动脉",
+    "length": "90.2公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ100系、キハ110系气动车",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "制铁遗迹, 世界遗产, 北上山地, 超级龙卷风, 震灾复兴, 矿山锻造者",
+    "character_personality_tags": [
+      "制铁遗迹",
+      "世界遗产",
+      "北上山地",
+      "超级龙卷风",
+      "震灾复兴",
+      "矿山锻造者"
+    ],
+    "character_role": "釜石·铁之炼金术师",
+    "character_age": "大正初年的矿山锻造者",
+    "character_catchphrase": "鉄は国家なり（铁即国家）",
+    "fun_facts": "制铁遗迹 | 世界遗产 | 北上山地 | 超级龙卷风 | 震灾复兴 | 矿山锻造者",
+    "opening_year": "1914年（花卷—仙人峠间开通）",
+    "key_milestone": "1914年（花卷—仙人峠间开通）"
+  }
+}

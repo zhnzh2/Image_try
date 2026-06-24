@@ -1,0 +1,39 @@
+{
+  "id": "22_青梅线",
+  "name": "青梅线",
+  "name_ja": "青梅線 JC",
+  "line_specific": "JR东日本青梅线。主色橙（#FF6600）。全长37.2公里。源流1894年。",
+  "poster_vars": {
+    "line_name_zh": "青梅线",
+    "line_name_en": "Ome Line",
+    "line_code": "JC",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF6600",
+    "route_type": "东京西部通勤与自然观光的双重动脉",
+    "length": "37.2公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E233系0番台",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "橙色防风夹克, 奥多摩枫叶, 御岳狼护身符, 两面派性格, 城市与山林的交界者, 中央快速线的山岳搭档",
+    "character_personality_tags": [
+      "橙色防风夹克",
+      "奥多摩枫叶",
+      "御岳狼护身符",
+      "两面派性格",
+      "城市与山林的交界者",
+      "中央快速线的山岳搭档"
+    ],
+    "character_role": "青梅·奥多摩山ガール",
+    "character_age": "明治老牌姐姐，中央线最忠实的山岳搭档",
+    "character_catchphrase": "奥多摩的空气是甜的，你闻到了吗",
+    "fun_facts": "橙色防风夹克 | 奥多摩枫叶 | 御岳狼护身符 | 两面派性格 | 城市与山林的交界者 | 中央快速线的山岳搭档",
+    "opening_year": "1894年",
+    "key_milestone": "1894年"
+  }
+}

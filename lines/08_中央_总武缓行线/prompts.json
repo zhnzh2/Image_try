@@ -1,0 +1,40 @@
+{
+  "id": "08_中央_总武缓行线",
+  "name": "中央·总武缓行线",
+  "name_ja": "ちゅうおう・そうぶかんこうせん JB",
+  "line_specific": "JR东日本中央·总武缓行线。主色黄蓝（#FFCC00）。全长60 公里。源流1894 年（源流与总武本线、中央本线历史交织，但作为“缓行线”运行系统的确立是在战后）。",
+  "poster_vars": {
+    "line_name_zh": "中央·总武缓行线",
+    "line_name_en": "Chuo-Sobu Local Line",
+    "line_code": "JB",
+    "operator": "JR东日本",
+    "line_color": "黄蓝",
+    "line_color_hex": "#FFCC00",
+    "route_type": "地下快速通道",
+    "length": "60 公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E231 系 0 番台和 E231 系 500 番台",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "各站停车, 黄蓝条纹, 温柔慢性子, 千叶日常, 御茶之水姐妹交会, 车站手帐, 秋叶原零食",
+    "character_personality_tags": [
+      "各站停车",
+      "黄蓝条纹",
+      "温柔慢性子",
+      "千叶日常",
+      "御茶之水姐妹交会",
+      "车站手帐",
+      "秋叶原零食"
+    ],
+    "character_role": "中央・日和",
+    "character_age": "她的血统可以追溯到明治中期，但作为“缓行”身份的自我认同是昭和后期逐步成型，外表是温和的二十代前半，气质上更像“慢性子的妹妹”",
+    "character_catchphrase": "急的人坐姐姐去，剩下的交给我",
+    "fun_facts": "各站停车 | 黄蓝条纹 | 温柔慢性子 | 千叶日常 | 御茶之水姐妹交会 | 车站手帐 | 秋叶原零食",
+    "opening_year": "1894 年（源流与总武本线、中央本线历史交织，但作为“缓行线”运行系统的确立是在战后）",
+    "key_milestone": "1894 年（源流与总武本线、中央本线历史交织，但作为“缓行线”运行系统的确立是在战后）"
+  }
+}

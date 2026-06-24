@@ -1,0 +1,41 @@
+{
+  "id": "05_秋田新干线",
+  "name": "秋田新干线",
+  "name_ja": "秋田新幹線",
+  "line_specific": "JR东日本秋田新干线。主色茜红（#D93A39）。全长127.3公里。源流1997年（盛冈—秋田段开业）。",
+  "poster_vars": {
+    "line_name_zh": "秋田新干线",
+    "line_name_en": "Akita Shinkansen",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "茜红",
+    "line_color_hex": "#D93A39",
+    "route_type": "日本第二条迷你新干线",
+    "length": "127.3公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": "7辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "茜红彗星, 小町, 田泽湖, 角馆, 超级小町, 秋田美人, 优雅飒爽, 首都圈核心干线（环线与南北轴）",
+    "character_personality_tags": [
+      "茜红彗星",
+      "小町",
+      "田泽湖",
+      "角馆",
+      "超级小町",
+      "秋田美人",
+      "优雅飒爽",
+      "首都圈核心干线（环线与南北轴）"
+    ],
+    "character_role": "秋田・小町之红彗星",
+    "character_age": "平成后期的迷你新干线美少女，优雅中透着爽朗的秋田美人",
+    "character_catchphrase": "小町，优雅地参上",
+    "fun_facts": "茜红彗星 | 小町 | 田泽湖 | 角馆 | 超级小町 | 秋田美人 | 优雅飒爽 | 首都圈核心干线（环线与南北轴）",
+    "opening_year": "1997年（盛冈—秋田段开业）",
+    "key_milestone": "1997年（盛冈—秋田段开业）"
+  }
+}

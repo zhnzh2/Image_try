@@ -1,0 +1,40 @@
+{
+  "id": "46_越后线",
+  "name": "越后线",
+  "name_ja": "越後線",
+  "line_specific": "JR东日本越后线。主色绿（#2E8B57）。全长83.8公里。源流1897年。",
+  "poster_vars": {
+    "line_name_zh": "越后线",
+    "line_name_en": "Echigo Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "绿",
+    "line_color_hex": "#2E8B57",
+    "route_type": null,
+    "length": "83.8公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "E129系",
+    "formation": "4辆编成",
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "日本海, 夕阳, 稻穗, 北越铁道遗风, 温和恬静, 近郊通勤, 寺泊出云崎",
+    "character_personality_tags": [
+      "日本海",
+      "夕阳",
+      "稻穗",
+      "北越铁道遗风",
+      "温和恬静",
+      "近郊通勤",
+      "寺泊出云崎"
+    ],
+    "character_role": "越後 汐",
+    "character_age": "明治老牌姐姐，日本海沿岸的恬静守望者",
+    "character_catchphrase": "不急，慢慢来",
+    "fun_facts": "日本海 | 夕阳 | 稻穗 | 北越铁道遗风 | 温和恬静 | 近郊通勤 | 寺泊出云崎",
+    "opening_year": "1897年",
+    "key_milestone": "1897年"
+  }
+}

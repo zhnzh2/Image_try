@@ -1,0 +1,41 @@
+{
+  "id": "17_埼京线",
+  "name": "埼京线",
+  "name_ja": "埼京線",
+  "line_specific": "JR东日本埼京线。主色深绿（#2E8B57）。源流1985 年（赤羽—大宫间开通）。",
+  "poster_vars": {
+    "line_name_zh": "埼京线",
+    "line_name_en": "Saikyo Line",
+    "line_code": "JA",
+    "operator": "JR东日本",
+    "line_color": "深绿",
+    "line_color_hex": "#2E8B57",
+    "route_type": "首都圈副都心最重要的纵向通勤动脉",
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "副都心, 深绿, E233, 直通临海, 通勤战略家, 守时, 都市职业装, 首都圈贯通系统与外环",
+    "character_personality_tags": [
+      "副都心",
+      "深绿",
+      "E233",
+      "直通临海",
+      "通勤战略家",
+      "守时",
+      "都市职业装",
+      "首都圈贯通系统与外环"
+    ],
+    "character_role": "埼京·副都心疾走",
+    "character_age": "昭和末·平成初诞生的战略新世代，干练的职业女性",
+    "character_catchphrase": "副都心的钟，由我来校对",
+    "fun_facts": "副都心 | 深绿 | E233 | 直通临海 | 通勤战略家 | 守时 | 都市职业装 | 首都圈贯通系统与外环",
+    "opening_year": "1985 年（赤羽—大宫间开通）",
+    "key_milestone": "1985 年（赤羽—大宫间开通）"
+  }
+}

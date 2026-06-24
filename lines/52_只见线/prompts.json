@@ -1,0 +1,39 @@
+{
+  "id": "52_只见线",
+  "name": "只见线",
+  "name_ja": "只見線",
+  "line_specific": "JR东日本只见线。主色蓝（#0066CC）。全长135.2公里。源流1942年（会津坂下—只見段）。",
+  "poster_vars": {
+    "line_name_zh": "只见线",
+    "line_name_en": "Tadami Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "蓝",
+    "line_color_hex": "#0066CC",
+    "route_type": null,
+    "length": "135.2公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "キハ40系和キハE120形气动车",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "豪雪秘境, 只见川峡谷, 鉄道写真圣地, 沉默的守望者, 赤字线路的尊严, 地方交通线（东北·日本海侧与内陆）",
+    "character_personality_tags": [
+      "豪雪秘境",
+      "只见川峡谷",
+      "鉄道写真圣地",
+      "沉默的守望者",
+      "赤字线路的尊严",
+      "地方交通线（东北·日本海侧与内陆）"
+    ],
+    "character_role": "只見·雪萤",
+    "character_age": "昭和中期出生的秘境守门人",
+    "character_catchphrase": "我不是为了赚钱才活着的",
+    "fun_facts": "豪雪秘境 | 只见川峡谷 | 鉄道写真圣地 | 沉默的守望者 | 赤字线路的尊严 | 地方交通线（东北·日本海侧与内陆）",
+    "opening_year": "1942年（会津坂下—只見段）",
+    "key_milestone": "1942年（会津坂下—只見段）"
+  }
+}

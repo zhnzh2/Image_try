@@ -1,0 +1,40 @@
+{
+  "id": "44_上越线",
+  "name": "上越线",
+  "name_ja": "",
+  "line_specific": "JR东日本上越线。主色深绿（#006400）。全长162.6公里。源流1914年（高崎—水上间开通）。",
+  "poster_vars": {
+    "line_name_zh": "上越线",
+    "line_name_en": "Joetsu Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "深绿",
+    "line_color_hex": "#006400",
+    "route_type": "日本海侧与太平洋侧之间的物资通道",
+    "length": "162.6公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": "有E129系双辆编成、211系等",
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "雪国, 三国山脉, 水上温泉, 越后汤泽, 除雪, 川端康成, 坚毅女战士",
+    "character_personality_tags": [
+      "雪国",
+      "三国山脉",
+      "水上温泉",
+      "越后汤泽",
+      "除雪",
+      "川端康成",
+      "坚毅女战士"
+    ],
+    "character_role": "上越·雪国穿越者",
+    "character_age": "大正世代出生的坚毅青年型姐姐，雪国与平原之间的纽带",
+    "character_catchphrase": "隧道里很暗，但在那一头，是日本海",
+    "fun_facts": "雪国 | 三国山脉 | 水上温泉 | 越后汤泽 | 除雪 | 川端康成 | 坚毅女战士",
+    "opening_year": "1914年（高崎—水上间开通）",
+    "key_milestone": "1914年（高崎—水上间开通）"
+  }
+}

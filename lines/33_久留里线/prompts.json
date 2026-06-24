@@ -1,0 +1,40 @@
+{
+  "id": "33_久留里线",
+  "name": "久留里线",
+  "name_ja": "久留里線",
+  "line_specific": "JR东日本久留里线。主色灰（#808080）。源流1912 年（木更津—久留里开通）。",
+  "poster_vars": {
+    "line_name_zh": "久留里线",
+    "line_name_en": "Kururi Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "灰",
+    "line_color_hex": "#808080",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "山雾, 名水, 久留里城, 柴油气动车, 秘境, 丘陵巫女, 龟山",
+    "character_personality_tags": [
+      "山雾",
+      "名水",
+      "久留里城",
+      "柴油气动车",
+      "秘境",
+      "丘陵巫女",
+      "龟山"
+    ],
+    "character_role": "久留里 霞（くるり・かすみ）",
+    "character_age": "大正同年与内房线为伴的“山雾隐者”，房总丘陵深处的気動車巫女。",
+    "character_catchphrase": "霧が出てきたね…静かに行こう",
+    "fun_facts": "山雾 | 名水 | 久留里城 | 柴油气动车 | 秘境 | 丘陵巫女 | 龟山",
+    "opening_year": "1912 年（木更津—久留里开通）",
+    "key_milestone": "1912 年（木更津—久留里开通）"
+  }
+}

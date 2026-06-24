@@ -1,0 +1,40 @@
+{
+  "id": "36_日光线",
+  "name": "日光线",
+  "name_ja": "日光線",
+  "line_specific": "JR东日本日光线。主色红（#CC0000）。全长40 公里。源流1885 年（宇都宫—日光）。",
+  "poster_vars": {
+    "line_name_zh": "日光线",
+    "line_name_en": "Nikko Line",
+    "line_code": null,
+    "operator": "JR东日本",
+    "line_color": "红",
+    "line_color_hex": "#CC0000",
+    "route_type": "东北本线·宇都宫线的支线",
+    "length": "40 公里",
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "female",
+    "character_personality": "日光社寺, 巫女, 朱红与金, 宇都宫, 参拜道, 千年杉林, 观光守门人",
+    "character_personality_tags": [
+      "日光社寺",
+      "巫女",
+      "朱红与金",
+      "宇都宫",
+      "参拜道",
+      "千年杉林",
+      "观光守门人"
+    ],
+    "character_role": "日光・二荒の巫女",
+    "character_age": "北关东明治老牌参拜道姐姐",
+    "character_catchphrase": "日光，比你想象的更清净——不过红叶季除外",
+    "fun_facts": "日光社寺 | 巫女 | 朱红与金 | 宇都宫 | 参拜道 | 千年杉林 | 观光守门人",
+    "opening_year": "1885 年（宇都宫—日光）",
+    "key_milestone": "1885 年（宇都宫—日光）"
+  }
+}

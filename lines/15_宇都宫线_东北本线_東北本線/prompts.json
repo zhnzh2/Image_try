@@ -1,0 +1,40 @@
+{
+  "id": "15_宇都宫线_东北本线_東北本線",
+  "name": "宇都宫线／东北本线／東北本線",
+  "name_ja": "",
+  "line_specific": "JR东日本宇都宫线／东北本线／東北本線。主色橙（#FF8C00）。源流1884 年（上野—大宫—宇都宫间延伸）。",
+  "poster_vars": {
+    "line_name_zh": "宇都宫线／东北本线／東北本線",
+    "line_name_en": "Utsunomiya Line",
+    "line_code": "JU",
+    "operator": "JR东日本",
+    "line_color": "橙",
+    "line_color_hex": "#FF8C00",
+    "route_type": null,
+    "length": null,
+    "stations": null,
+    "loop_time": null,
+    "service_pattern": null,
+    "rolling_stock": null,
+    "formation": null,
+    "main_stations": null,
+    "related_lines": null,
+    "character_gender": "male",
+    "character_personality": "东北本线, 守门骑士, 北关东, 宇都宫, 绿色车, 通勤重装, 双子搭档",
+    "character_personality_tags": [
+      "东北本线",
+      "守门骑士",
+      "北关东",
+      "宇都宫",
+      "绿色车",
+      "通勤重装",
+      "双子搭档"
+    ],
+    "character_role": "宇都宫·北境守门人",
+    "character_age": "北关东双子之一，成熟厚重的守门骑士",
+    "character_catchphrase": "北境的人，也要分秒不差地抵达东京",
+    "fun_facts": "东北本线 | 守门骑士 | 北关东 | 宇都宫 | 绿色车 | 通勤重装 | 双子搭档",
+    "opening_year": "1884 年（上野—大宫—宇都宫间延伸）",
+    "key_milestone": "1884 年（上野—大宫—宇都宫间延伸）"
+  }
+}
